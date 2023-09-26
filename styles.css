@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.container{
+    width: 375px;
+    height: 812px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px #8883F0;
+    border-radius: 2px;
+    padding: 1px;
+}
+.nome{
+    font-family: 'Righteous', cursive;
+    background: linear-gradient(to bottom, #EF8481 1%, #8883F0 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+body{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+
+}
+
+.login{
+    display: flex;
+    border: solid 1px #8883F0;
+    height: 60px;
+    width: 210px;
+    margin: 10px;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #EF8481;
+    color: aliceblue;
+}
+.login:hover{
+    display: flex;
+    border: solid 1px #8883F0;
+    height: 60px;
+    width: 210px;
+    margin: 10px;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ef8581d3;
+    color: aliceblue;
+}
+.cadastrar{
+    display: flex;
+    border: solid 1px #8883F0;
+    height: 60px;
+    width: 210px;
+    margin: 10px;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color:#8883F0;
+    
+}
+
+.cadastrar:hover{
+    display: flex;
+    border: solid 1px #8883F0;
+    height: 60px;
+    width: 210px;
+    margin: 10px;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color:#8883f0af;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 120px;
+}
