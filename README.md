@@ -1,5 +1,5 @@
 # Juno
-<p>Um projeto da matéria de Projeto Integrados de Extensão, com foco na criação e desenvolvimento de um sistema voltado para o auxilio dos profissionais da área da saúde no ambiente da UBS 22, com destaque na catolação e gerenciamento de gestantes na UBS e suas respectivas microáreas.</p>
+<p>Um projeto da matéria de Projeto Integrador de Extensão, com foco na criação e desenvolvimento de um sistema voltado para o auxilio dos profissionais da área da saúde no ambiente da UBS 22, com destaque na catolação e gerenciamento de gestantes na UBS e suas respectivas microáreas.</p>
 <ol>
   <li>Primeira etapa do projeto</li>
   <ol type="1">
