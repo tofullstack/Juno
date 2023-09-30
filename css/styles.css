@@ -135,6 +135,11 @@ a{
     color: #00BA88;
     font-weight: 700;
 }
+a:hover{
+    color: #00BA88;
+    font-weight: 700;
+    text-decoration: underline;
+}
 
 .botao-entrar{
     display: flex;
@@ -154,6 +159,25 @@ a{
     color:#ffffff;
     font-weight: 700;
 }
+.botao-entrar:hover{
+    display: flex;
+    border: solid 1px #ef8581d3;
+    height: 60px;
+    width: 310px;
+    margin: 10px;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #e7a09dd3;
+    color:#ffffff;
+    font-weight: 700;
+}
+
 .entrar-nome{
     text-align: center;
     font-size: 30px;
