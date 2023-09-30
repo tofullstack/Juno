@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Righteous&family=Sarala:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -16,6 +18,7 @@
     border-radius: 2px;
     padding: 1px;
 }
+/* TELA INICIAL */
 .nome{
     font-family: 'Righteous', cursive;
     background: linear-gradient(to bottom, #EF8481 1%, #8883F0 90%);
@@ -28,6 +31,11 @@ body{
     align-items: start;
     flex-direction: column;
 
+}
+img{
+    width: 150px;
+    height: 150px;
+    align-self: center;
 }
 
 .login{
@@ -107,4 +115,78 @@ body{
     flex-direction: column;
     gap: 15px;
     margin-bottom: 120px;
+}
+
+/* TELA DE LOGIN */
+.container-logar{
+    width: 375px;
+    height: 812px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 1px #8883F0;
+    border-radius: 2px;
+    padding: 1px;
+    font-family: 'Inter', sans-serif
+
+}
+a{
+    color: #00BA88;
+    font-weight: 700;
+}
+
+.botao-entrar{
+    display: flex;
+    border: solid 1px #ef8581d3;
+    height: 60px;
+    width: 310px;
+    margin: 10px;
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: #ef8581d3;
+    color:#ffffff;
+    font-weight: 700;
+}
+.entrar-nome{
+    text-align: center;
+
+}
+.input-box{
+    /* padding-left: 60px; */
+    border: solid 1px #b4afafd3;
+    position: relative;
+    outline: none;
+    height: 60px;
+    width: 310px;
+    margin: 10px;
+    border-radius: 50px;
+    
+}
+.input-box input{
+    border: 1px;
+    position: relative;
+    background: transparent;
+    outline: none;
+    height: 60px;
+    width: 310px;
+    border-radius: 50px;
+    padding: 20px 45px 20px 20px;
+
+}
+.input-box input::placeholder{
+    padding: 10px;
+    color: #b6b6b6;
+}
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 40%;
+    color: #8883F0;
 }
