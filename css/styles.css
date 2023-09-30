@@ -32,10 +32,26 @@ body{
     flex-direction: column;
 
 }
+/* LOGO JUNO */
 img{
     width: 150px;
     height: 150px;
     align-self: center;
+/* nesta parte esta sendo determinada a velocidade da rotação */
+    -webkit-animation: spin 3s linear infinite;
+    -moz-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+    /* caso queiram alterar qnt menor o tempo mais rapido ela completa a rotação */
+}
+/* usando keyframes para a rotação */
+@-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+@keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
 }
 
 .login{
