@@ -33,7 +33,7 @@ body{
 
 }
 /* LOGO JUNO */
-img{
+.logo-rotativa{
     width: 150px;
     height: 150px;
     align-self: center;
@@ -131,6 +131,12 @@ img{
     flex-direction: column;
     gap: 15px;
     margin-bottom: 120px;
+    
+}
+#logo-estatica{
+    width: 150px;
+    height: 150px;
+    align-self: center;
 }
 
 /* TELA DE LOGIN */
