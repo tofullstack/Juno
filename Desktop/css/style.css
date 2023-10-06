@@ -99,9 +99,37 @@ form .text-field, form .password-field{
 }
 
 .forgot-password{
-    margin: -5px 0 20px;
+    margin: -5px 0 30px 180px;
     color: #adadad;
 }
 .forgot-password:hover{
+    text-decoration: underline;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #e27d7a;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #ffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    border-color: #e27d7a;
+    transition: .5s;
+}
+
+.signup-page-link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+}
+
+.signup-page-link a:hover{
     text-decoration: underline;
 }
