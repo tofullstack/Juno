@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Righteous&family=Sarala:wght@400;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
-.container{
+
+.container {
     width: 375px;
     height: 812px;
     display: flex;
@@ -18,43 +19,55 @@
     border-radius: 2px;
     padding: 1px;
 }
+
 /* TELA INICIAL */
-.nome{
+.nome {
     font-family: 'Righteous', cursive;
     background: linear-gradient(to bottom, #EF8481 1%, #8883F0 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block;
 }
-body{
+
+body {
     display: flex;
     align-items: start;
     flex-direction: column;
 
 }
+
 /* LOGO JUNO */
-.logo-rotativa{
+.logo-rotativa {
     width: 150px;
     height: 150px;
     align-self: center;
-/* nesta parte esta sendo determinada a velocidade da rotação */
+    /* nesta parte esta sendo determinada a velocidade da rotação */
     -webkit-animation: spin 3s linear infinite;
     -moz-animation: spin 3s linear infinite;
     animation: spin 3s linear infinite;
     /* caso queiram alterar qnt menor o tempo mais rapido ela completa a rotação */
 }
+
 /* usando keyframes para a rotação */
-@-webkit-keyframes spin{
-    100%{-webkit-transform: rotate(360deg);}
-}
-@-moz-keyframes spin{
-    100%{-webkit-transform: rotate(360deg);}
-}
-@keyframes spin{
-    100%{-webkit-transform: rotate(360deg);}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
-.login{
+@-moz-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.login {
     display: flex;
     border: solid 1px #8883F0;
     height: 60px;
@@ -71,7 +84,8 @@ body{
     background-color: #EF8481;
     color: aliceblue;
 }
-.login:hover{
+
+.login:hover {
     display: flex;
     border: solid 1px #8883F0;
     height: 60px;
@@ -88,7 +102,8 @@ body{
     background-color: #ef8581d3;
     color: aliceblue;
 }
-.cadastrar{
+
+.cadastrar {
     display: flex;
     border: solid 1px #8883F0;
     height: 60px;
@@ -103,11 +118,11 @@ body{
     cursor: pointer;
     text-transform: uppercase;
     background-color: #ffffff;
-    color:#8883F0;
-    
+    color: #8883F0;
+
 }
 
-.cadastrar:hover{
+.cadastrar:hover {
     display: flex;
     border: solid 1px #8883F0;
     height: 60px;
@@ -122,25 +137,26 @@ body{
     cursor: pointer;
     text-transform: uppercase;
     background-color: #ffffff;
-    color:#8883f0af;
+    color: #8883f0af;
 }
 
-.logo{
+.logo {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     gap: 15px;
     margin-bottom: 120px;
-    
+
 }
-#logo-estatica{
+
+#logo-estatica {
     width: 150px;
     height: 150px;
     align-self: center;
 }
 
 /* TELA DE LOGIN */
-.container-logar{
+.container-logar {
     width: 375px;
     height: 812px;
     display: flex;
@@ -151,19 +167,20 @@ body{
     border-radius: 2px;
     padding: 1px;
     font-family: 'Inter', sans-serif
-
 }
-a{
+
+a {
     color: #00BA88;
     font-weight: 700;
 }
-a:hover{
+
+a:hover {
     color: #00BA88;
     font-weight: 700;
     text-decoration: underline;
 }
 
-.botao-entrar{
+.botao-entrar {
     display: flex;
     border: solid 1px #ef8581d3;
     height: 60px;
@@ -178,10 +195,11 @@ a:hover{
     cursor: pointer;
     text-transform: uppercase;
     background-color: #ef8581d3;
-    color:#ffffff;
+    color: #ffffff;
     font-weight: 700;
 }
-.botao-entrar:hover{
+
+.botao-entrar:hover {
     display: flex;
     border: solid 1px #ef8581d3;
     height: 60px;
@@ -196,17 +214,18 @@ a:hover{
     cursor: pointer;
     text-transform: uppercase;
     background-color: #e7a09dd3;
-    color:#ffffff;
+    color: #ffffff;
     font-weight: 700;
 }
 
-.entrar-nome{
+.entrar-nome {
     text-align: center;
     font-size: 30px;
     padding: 30%;
 
 }
-.input-box{
+
+.input-box {
     /* padding-left: 60px; */
     border: solid 1px #b4afafd3;
     position: relative;
@@ -215,9 +234,10 @@ a:hover{
     width: 310px;
     margin: 10px;
     border-radius: 50px;
-    
+
 }
-.input-box input{
+
+.input-box input {
     border: 1px;
     position: relative;
     background: transparent;
@@ -228,10 +248,12 @@ a:hover{
     padding: 20px 45px 20px 20px;
 
 }
-.input-box input::placeholder{
+
+.input-box input::placeholder {
     padding: 10px;
     color: #b6b6b6;
 }
+
 .input-box i {
     position: absolute;
     right: 20px;
@@ -239,27 +261,27 @@ a:hover{
     color: #8883F0;
 }
 
-.remember-forgot{
+.remember-forgot {
     display: flex;
     justify-content: space-around;
 }
 
-.registrar-link{
+.registrar-link {
     display: flex;
     justify-content: space-around;
 }
 
-.cpf{
+.cpf {
     padding-top: 20%;
     gap: 40px;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   color: #8883F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #8883F0;
 }
 
 /* TELA DE CADASTRO */
-.container-cadastrar{
+.container-cadastrar {
     width: 375px;
     height: 812px;
     display: flex;
@@ -271,7 +293,8 @@ a:hover{
     padding: 1px;
     font-family: 'Inter', sans-serif
 }
-.input-box-cadastrar{
+
+.input-box-cadastrar {
     /* padding-left: 60px; */
     border: solid 1px #b4afafd3;
     position: relative;
@@ -280,9 +303,10 @@ a:hover{
     width: 310px;
     margin: 10px;
     border-radius: 50px;
-    
+
 }
-.input-box-cadastrar input{
+
+.input-box-cadastrar input {
     border: 1px;
     position: relative;
     background: transparent;
@@ -294,21 +318,24 @@ a:hover{
 
 }
 
-.container-cadastrar i{
+.container-cadastrar i {
     color: #8883F0;
     position: absolute;
     right: 20px;
     top: 40%;
 }
-.entrar-link{
+
+.entrar-link {
     display: flex;
     justify-content: space-around;
 }
-.cadastrar-titulo{
+
+.cadastrar-titulo {
     text-align: center;
     font-size: 30px;
 }
-.cadastrar-nome{
+
+.cadastrar-nome {
     text-align: center;
     font-size: 20px;
     padding: 10%;
