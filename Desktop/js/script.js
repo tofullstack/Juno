@@ -46,3 +46,20 @@ input.addEventListener('keypress', ()=>{
     console.log(inputlength)
 });
 
+function checkLogin(){
+    /*
+    let password = document.getElementById("new-password").value;
+    let confirmPassword = document.getElementById("confirm-new-password").value;
+    let message = document.getElementById("message");
+
+    if (password.length=!0){
+        if(password == confirmPassword){
+            message.textContent = "Senha confirmável"
+        }
+        else{
+            message.textContent = "Senhas não combinam"
+        }
+    }
+    */
+    window.location.href = "home.html";
+}
