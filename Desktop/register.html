@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juno - Cadastrar</title>
+     <!-- Links para o Google Fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Inter&family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="css/registerstyle.css">
+</head>
+<body>
+    <div class="center">
+        <h1>Crie seu cadastro</h1>
+        <div class="register-name">
+            <label>Nome</label>
+            <input type="text" required>
+            <label>Sobrenome</label>
+            <input type="text" required>
+        </div>
+        
+        <div class="register-name">
+            <label>CPF</label>
+            <input type="text" 
+                   autocomplete="off" 
+                   maxlength="14" 
+                   pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                   title="Digite um CPF no formato: xxx.xxx.xxx-xx" 
+                   id="CPFfield" required>
+        </div>
+
+
+    </div>
+</body>
+</html>
