@@ -16,3 +16,132 @@ body{
     height: 100vh;
     overflow: hidden;
 }
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFF;
+    border-radius: 12px;
+}
+
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+}
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+
+form .register-firstname, form .register-surname, form .register-CPF, form .register-email, form .first-password, form .confirm-password{
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid #9389ec;
+    margin: 30px 0;
+}
+
+.register-firstname input,.register-surname input, .register-CPF input, .register-email input, .first-password input, .confirm-password input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.register-firstname label,.register-surname label, .register-CPF label, .register-email label, .first-password label, .confirm-password label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.register-firstname span::before,
+.register-surname span::before,
+.register-CPF span::before,
+.register-email span::before,
+.first-password label span::before,
+.confirm-password span::before
+{  
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;/*vai iniciar como 0 e vai se expandir na animação*/
+    height: 2px;
+    background: #adadad;
+    transition: .5s;
+}
+
+.register-firstname input:focus ~ label,
+.register-firstname input:valid ~ label,
+
+.register-surname input:focus ~ label,
+.register-surname input:valid ~ label,
+
+.register-CPF input:focus ~ label,
+.register-CPF input:valid ~ label,
+
+.register-email input:focus ~ label,
+.register-email input:valid ~ label,
+
+.first-password input:focus ~ label,
+.first-password input:valid ~ label,
+
+.confirm-password input:focus ~ label,
+.confirm-password input:valid ~ label
+{
+    top: -5px;
+    color:#e27d7a;
+}
+
+.register-firstname input:focus ~ span::before,
+.register-firstname input:valid ~ span::before,
+.register-surname input:focus ~ span::before,
+.register-surname input:valid ~ span::before,
+.register-CPF input:focus ~ span::before,
+.register-CPF input:valid ~ span::before,
+.register-email input:focus ~ span::before,
+.register-email input:valid ~ span::before,
+.first-password input:focus ~ span::before,
+.first-password input:valid ~ span::before,
+.confirm-password input:focus ~ span::before,
+.confirm-password input:valid ~ span::before
+{
+    width: 100%;
+    background: #e27d7a;
+}
+
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: #e27d7a;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #ffff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    border-color: #e27d7a;
+    transition: .5s;
+}
+
+.signup-page-link{
+    margin: 15px 0 30px 10px;
+    color: #adadad;
+}
+

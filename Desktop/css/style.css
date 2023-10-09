@@ -90,6 +90,7 @@ form .text-field, form .password-field{
     color:#e27d7a;
 }
 
+
 .text-field input:focus ~ span::before,
 .text-field input:valid ~ span::before,
 .password-field input:focus ~ span::before,
@@ -97,6 +98,7 @@ form .text-field, form .password-field{
     width: 100%;
     background: #e27d7a;
 }
+
 
 .forgot-password{
     margin: -5px 0 30px 180px;

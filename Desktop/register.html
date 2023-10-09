@@ -12,25 +12,60 @@
 </head>
 <body>
     <div class="center">
-        <h1>Crie seu cadastro</h1>
-        <div class="register-name">
-            <label>Nome</label>
-            <input type="text" required>
-            <label>Sobrenome</label>
-            <input type="text" required>
-        </div>
+        <form method="post">
+            <h1>Crie seu cadastro</h1>
+
+            <div class="register-name">
+                <div class="register-firstname">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Nome</label>
+                </div>
+                <div class="register-surname">
+                    <input type="text" required>
+                    <span></span>
+                    <label>Sobrenome</label>
+                </div>
+            </div>
         
-        <div class="register-name">
-            <label>CPF</label>
-            <input type="text" 
-                   autocomplete="off" 
-                   maxlength="14" 
-                   pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
-                   title="Digite um CPF no formato: xxx.xxx.xxx-xx" 
-                   id="CPFfield" required>
+            <div class="register-CPF">
+                <input type="text" 
+                    autocomplete="off" 
+                    maxlength="14" 
+                    pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                    title="Digite um CPF no formato: xxx.xxx.xxx-xx" 
+                    id="CPFfield" required>
+                <span></span>
+                <label>CPF</label>
+            </div>
+
+            <div class="register-email">
+                <input type="text" required>
+                <span></span>
+                <label>Email</label>
+             </div>
+
+            <div class="register-password">
+                <div class="first-password">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Senha</label>
+                </div>
+                <div class="confirm-password">
+                    <input type="password" required>
+                    <span></span>
+                    <label>Confirmar Senha</label>
+                </div>
+            </div>
+        <div class="register-button">
+                <input type="submit" value="Cadastrar">
+            </div>
+        <div class="signup-page-link">
+            Já possui uma conta? <a href="index.html">Entrar com conta existente</a>
         </div>
 
-
-    </div>
+        </form>
+    </div> <!--fim da div center  -->
+    <script src="js/registerscript.js"></script>
 </body>
 </html>
