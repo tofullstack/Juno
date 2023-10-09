@@ -3,7 +3,7 @@
 :root{
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
-    --primary-color: #695cfe;
+    --primary-color: #EF8481;
     --primary-color-light: #f6f5ff;
     --toggle-color: #ddd;
     --text-color: #707070;
@@ -46,11 +46,20 @@
 body {
     height: 100vh;
     background: var(--body-color);
+    transition: var(--tran-04);
     display: flex;
     align-items: start;
     flex-direction: column;
     font-family: 'Sarala', cursive;
 
+}
+body.dark{
+    --body-color: #18191A;
+    --sidebar-color: #242526;
+    --primary-color: #3a3b3c;
+    --primary-color-light: #3A3B3C;
+    --toggle-color: #ddd;
+    --text-color: #CCC;
 }
 
 /* LOGO JUNO */
@@ -365,6 +374,15 @@ a:hover {
     width: 250px;
     padding: 10px 14px;
     background: var(--sidebar-color);
+    transition: var(--tran-05);
+}
+.sidebar.close{
+    width: 88px;
+
+}
+.sidebar.close .text{
+    opacity: 0;
+    
 }
 .sidebar .image-text img{
     width: 40px;
@@ -375,6 +393,9 @@ a:hover {
     font-size: 16px;
     font-weight: 500;
     color: var(--text-color);
+    transition: var(--tran-04);
+    white-space: nowrap;
+    opacity: 1;
 }
 .sidebar .image{
     min-width: 60px;
@@ -451,6 +472,7 @@ header .image-text .header-text{
 
 .sidebar .search-box{
     background: var(--primary-color-light);
+    border-radius: 6px;
 }
 .search-box input{
     height: 100%;
@@ -468,6 +490,8 @@ header .image-text .header-text{
     justify-content: space-between;
 }
 .menu-bar .mode{
+    position: relative;
+    border-radius: 6px;
     background: var(--primary-color-light);
 }
 .menu-bar .mode i
@@ -484,12 +508,15 @@ header .image-text .header-text{
     opacity: 0;
 }
 .menu-bar .mode .toggle-switch{
+    position: absolute;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
     min-width: 60px;
     cursor: pointer;
+    background: var(--primary-color-light);
 }
 .toggle-switch .switch{
     position: relative;
@@ -509,4 +536,11 @@ header .image-text .header-text{
     transform: translateY(-50%);
     background: var(--sidebar-color);
     cursor: pointer;
+    transition: var(--tran-03);
+}
+body.dark .switch::before{
+    left: 25px;
+}
+body.dark .sidebar header .toggle{
+    color: var(--text-color);
 }
