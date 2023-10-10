@@ -61,5 +61,5 @@ function checkLogin(){
         }
     }
     */
-    window.location.href = "home.html";
+    window.location.href = "menu.html";
 }
