@@ -20,6 +20,10 @@ h1 {
 p{
     color: #7B6BA8;
 }
+h2{
+    color: #432C81;
+    font-size: 2.5vh;
+}
 
 .text-container {
     flex-grow: 1;
