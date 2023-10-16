@@ -207,7 +207,7 @@ header .image-text .header-text{
     height: 22px;
     width: 44px;
     border-radius: 25px;
-    background: var(--toggle-color);
+    background: var(--primary-color);
 }
 .switch::before{
     content: '';
