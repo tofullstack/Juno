@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Righteous&family=Sarala:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@700&display=swap');
 
 .header {
     display: flex;
@@ -15,6 +16,8 @@ h1 {
     color: rgba(67, 44, 129, 1);
     justify-content: space-evenly;
     font-size: 25px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
 
 }
 p{
@@ -34,32 +37,36 @@ h2{
 }
 
 .notification {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
     width: 375px;
     height: 872px;
     /* Largura da caixa de notificações */
     border: 1px solid #ccc;
     /* Borda da caixa de notificações */
-    padding: 10px;
-    justify-content: space-evenly;
+    /* padding: 10px; */
+    /* justify-content: space-evenly; */
 
 
 }
 
 /* Estilos para cada notificação */
 .notification-card {
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     /* Espaço entre as notificações */
     display: flex;
     /* Alinhar verticalmente o ponto e o texto */
     border-radius: 5px;
-    border: 2px solid rgba(237, 236, 244, 1);
+    border: 1px solid rgba(237, 236, 244, 1);
     /* Adicionei uma borda preta de 2px  */
 
     background: #FFFFFF;
     /* Por exemplo, para branco */
-    margin-top: 5%;
-    width: 375px;
+    margin-top: 2%;
+    /* width: 375px; */
     height: 80px;
+
 }
 
 /* Estilos para os pontos coloridos */
