@@ -32,8 +32,8 @@ h2{
     flex-grow: 1;
     /* Expande para ocupar todo o espaço disponível */
     justify-content: space-evenly;
-
-
+    margin-top: 2%;
+    margin-right: 2%;
 }
 
 .notification {
@@ -66,6 +66,7 @@ h2{
     margin-top: 2%;
     /* width: 375px; */
     height: 80px;
+    flex-direction: row;
 
 }
 
@@ -83,8 +84,9 @@ h2{
     /* Correção na propriedade flex-grow */
     justify-content: space-evenly;
     gap: 0;
-    margin-top: 2%;
-    margin-right: 5%;
+    margin-top: 8%;
+    margin-right: 3%;
+    
 }
 
 /* Cores dos pontos */
