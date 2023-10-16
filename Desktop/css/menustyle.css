@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Righteous&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Raleway:wght@700&display=swap');
 :root{
     --body-color: #E4E9F7;
     --sidebar-color: #FFF;
@@ -227,4 +228,33 @@ body.dark .switch::before{
 }
 body.dark .sidebar header .toggle{
     color: var(--text-color);
+}
+
+.container-dashboard{
+    display: flex;
+    padding-left: 250px;
+    gap: 4vh;
+    align-items: center;
+}
+
+.central{
+    transition: var(--tran-04);
+    display: flex;
+    /* border: .5px solid #8883F0; */
+    margin-top: 10px;
+    padding: 40px 40px 40px 40px;
+    border-radius: 2vh;
+    font-family: 'Raleway', sans-serif;
+    font-size: 10px;
+    color: var(--text-color);
+    background: var(--primary-color-light);
+    cursor: pointer;
+    /* background-color: var(--body-color); */
+}
+.central:hover{
+    background-color: #EF8481;
+    color: #f6f5ff;
+}
+.icon-not{
+    
 }
