@@ -12,3 +12,13 @@ const body = document.querySelector("body"),
     modeSwitch.addEventListener("click", () =>{
         body.classList.toggle("dark");
     });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const logoutBtn = document.getElementById("logoutBtn");
+    
+        logoutBtn.addEventListener("click", function(event) {
+            event.preventDefault(); // Evita que o link redirecione imediatamente
+            window.location.href = "index.html"; // Redireciona para a página de registro (ou outra página desejada)
+        });
+    });
+    
