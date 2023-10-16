@@ -12,3 +12,12 @@ const body = document.querySelector("body"),
     modeSwitch.addEventListener("click", () =>{
         body.classList.toggle("dark");
     });
+    document.addEventListener("DOMContentLoaded", function() {
+        const logoutBtn = document.getElementById("logoutBtn");
+    
+        logoutBtn.addEventListener("click", function(event) {
+            event.preventDefault(); 
+            window.location.href = "index.html";
+        });
+    });
+    
