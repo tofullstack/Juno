@@ -17,8 +17,8 @@ const body = document.querySelector("body"),
         const logoutBtn = document.getElementById("logoutBtn");
     
         logoutBtn.addEventListener("click", function(event) {
-            event.preventDefault(); // Evita que o link redirecione imediatamente
-            window.location.href = "index.html"; // Redireciona para a página de registro (ou outra página desejada)
+            event.preventDefault(); 
+            window.location.href = "index.html"; 
         });
     });
     
