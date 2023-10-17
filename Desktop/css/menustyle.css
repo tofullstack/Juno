@@ -202,6 +202,7 @@ header .image-text .header-text{
     min-width: 60px;
     cursor: pointer;
     background: var(--primary-color-light);
+    border-radius: 6px;
 }
 .toggle-switch .switch{
     position: relative;
@@ -255,8 +256,20 @@ body.dark .sidebar header .toggle{
     background-color: #EF8481;
     color: #f6f5ff;
 }
+.not{
+    margin-top: -60px;
+    display: flex;
+    align-items: end;
+    padding-left: 25vh;
+    /* justify-content: flex-end; */
+}
 .icon-not{
+    font-size: 20px;
     cursor: pointer;
     color: var(--primary-color);
     /* background-color: var(--primary-color-light); */
+    
+}
+.icon-not:hover{
+    color: #ffc7c5;
 }
