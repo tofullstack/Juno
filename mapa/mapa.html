@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menustyle.css">
+    <link rel="stylesheet" href="css/mapa.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Menu</title>
+</head>
+
+<body>
+    <div class="container-map">
+        <div class="top-bar">
+            <div class="pesquisa">
+                <input type="text" id="barra-de-pesquisa">
+            </div>
+        </div>
+        <div class="size-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d57642.16030225633!2d-54.576602!3d-25.450463!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1697511472178!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+    <div class="container-menu">
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                        <img src="img/logo.png" alt="Logo Juno">
+                    </span>
+                    <div class="text header-text">
+                        <span class="name">JUNO</span>
+                        <span class="profession">Olá Renata!</span>
+                    </div>
+                </div>
+                <i class='bx bx-chevron-right toggle'></i>
+            </header>
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links">
+                        <li class="search-box">
+                            <i class='bx bx-search-alt-2 icon'></i>
+                            <input type="search" placeholder="Buscar...">
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-home-circle icon'></i>
+                                <span class="text nav-text">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-bar-chart-alt-2 icon'></i>
+                                <span class="text nav-text">Estatísticas</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-id-card icon'></i>
+                                <span class="text nav-text">Pacientes</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-map icon'></i>
+                                <span class="text nav-text">Mapeamento</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bxs-file-doc icon'></i>
+                                <span class="text nav-text">Relatório</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-content">
+                    <li class="nav-link">
+                        <a href="#" id="logoutBtn">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="text nav-text">Sair</span>
+                        </a>
+                    </li>
+                    <li class="mode">
+                        <div class="moon-sun">
+                            <i class='bx bx-moon icon moon'></i>
+                            <i class='bx bx-sun icon sun'></i>
+                        </div>
+                        <span class="mode-text text">Modo Escuro</span>
+
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <script src="js/menuscript.js"></script>
+</body>
+
+</html>
