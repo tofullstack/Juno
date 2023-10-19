@@ -11,7 +11,7 @@
 * {
     font-family: "Inter", sans-serif;
     padding: 0;
-   
+
 }
 
 h1 {
@@ -20,20 +20,21 @@ h1 {
     font-size: 25px;
     font-family: Raleway, sans-serif;
     font-weight: 700;
-  
+
 
 }
-p{
+
+p {
     color: #7B6BA8;
 }
-h2{
+
+h2 {
     color: #432C81;
     font-size: 2.5vh;
 }
 
 .text-container {
     flex-grow: 1;
-    /* Expande para ocupar todo o espaço disponível */
     justify-content: space-evenly;
     margin-top: 2%;
     margin-right: 2%;
@@ -50,7 +51,6 @@ h2{
     /* Borda da caixa de notificações */
     /* padding: 10px; */
     /* justify-content: space-evenly; */
-
 
 }
 
@@ -70,63 +70,59 @@ h2{
     /* width: 375px; */
     height: 90%;
     flex-direction: row;
-    width: 90%; 
-    margin: 10px;/* Define a largura para 50% do tamanho original */
-   /* height: 200px; 
-   
-
-}
-
-/* Estilos para os pontos coloridos */
-/* Round */
-
-.dot {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin-right: 5px;
-    /* Espaço entre o ponto e o texto */
-    margin-left: 5px;
-    /*  pontos para a propriedade margin-left */
-    /* Correção na propriedade flex-grow */
-    justify-content: space-evenly;
-    gap: 0;
-    margin-top: 8%;
-    margin-right: 3%;
+    width: 90%;
+    margin: 10px;
     
 }
 
-/* Cores dos pontos */
-.dot-red {
-    background-color: rgba(254, 198, 47, 1);
-}
 
-.dot-blue {
-    background-color: rgba(112, 67, 207, 1);
-}
+    .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 5px;
+        /* Espaço entre o ponto e o texto */
+        margin-left: 5px;
+        /*  pontos para a propriedade margin-left */
+        /* Correção na propriedade flex-grow */
+        justify-content: space-evenly;
+        gap: 0;
+        margin-top: 8%;
+        margin-right: 3%;
 
-.dot-orange {
-    background-color: rgba(41, 201, 251, 1);
-}
+    }
 
-.dot-pink {
-    background-color: rgba(254, 198, 47, 1);
-}
+    /* Cores dos pontos */
+    .dot-red {
+        background-color: rgba(254, 198, 47, 1);
+    }
 
-/* Seletor para elementos .notification-card dentro de .notification-box */
-.notification-box .notification-card {
-    font-size: 17px;
-    /*tamanho de fonte desejado, por exemplo, 14 pixels */
-}
+    .dot-blue {
+        background-color: rgba(112, 67, 207, 1);
+    }
 
-/* Seletor para elementos .notification-card dentro de .notification-box, mas com classe específica */
-.notification-box .notification-card .text-container b {
-    font-size: 17px;
-    
-}
+    .dot-orange {
+        background-color: rgba(41, 201, 251, 1);
+    }
 
-/* Seletor para elementos .notification-card dentro de .notification-box, mas com classe específica */
-.notification-box .notification-card .text-container p {
-    font-size: 17px;
-    /*tamanho de fonte diferente para os elementos <p> dentro do .text-container */
-}
+    .dot-pink {
+        background-color: rgba(254, 198, 47, 1);
+    }
+
+    /* Seletor para elementos .notification-card dentro de .notification-box */
+    .notification-box .notification-card {
+        font-size: 17px;
+        /*tamanho de fonte desejado, por exemplo, 14 pixels */
+    }
+
+    /* Seletor para elementos .notification-card dentro de .notification-box, mas com classe específica */
+    .notification-box .notification-card .text-container b {
+        font-size: 17px;
+
+    }
+
+    /* Seletor para elementos .notification-card dentro de .notification-box, mas com classe específica */
+    .notification-box .notification-card .text-container p {
+        font-size: 17px;
+        /*tamanho de fonte diferente para os elementos <p> dentro do .text-container */
+    }
