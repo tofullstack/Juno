@@ -435,12 +435,12 @@ body.dark .sidebar header .toggle{
     padding: 8px;
     border-radius: 1.4rem;
 
-
 }
 .right-section .nav{
     display: flex;
     justify-content: end;
     gap: 2rem;
+    
 }
 .right-section .nav button{
     cursor: pointer;
@@ -450,6 +450,9 @@ body.dark .sidebar header .toggle{
     margin-left: 1.2rem;
     color: var(--text-color);
     font-family: 'Inter', sans-serif;
+}
+.icon-not{
+    color: rgb(224, 224, 224);
 }
 
 .right-section .reminders{
@@ -508,11 +511,12 @@ body.dark .sidebar header .toggle{
     background-color: var(--color-sucess);
 }
 .new{
+    font-size: 10px;
     margin-left: 1.0rem;
     background-color: var(--color-medium);
-    color: var(--body-color);
-    padding: 5px;
-    border-radius: 16px;
+    color: whitesmoke;
+    padding: 4px;
+    border-radius: 4px;
 }
 #menu-btn{
     border-radius: 20px;
