@@ -266,6 +266,7 @@ body.dark .sidebar header .toggle{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.6rem;
+    z-index: 1;
 }
 .container-dashboard .statistics > div{
     transition: all 0.3s ease;
@@ -425,10 +426,14 @@ body.dark .sidebar header .toggle{
     height: 100%;
 } 
 .right-section{
+    z-index: 2;
     margin-top: 1.4rem;
     position: absolute;
     top: 0;
     right: 0;
+    background-color: var(--primary-color-light);
+    padding: 20px 20px 20px 20px;
+    border-radius: 1.4rem;
 
 
 }
