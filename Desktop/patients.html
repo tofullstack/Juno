@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juno - Equipes</title>
+    <title>Juno - Pacientes</title>
     <!-- Links para o Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Inter&family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/teamsstyle.css">
+    <link rel="stylesheet" href="css/patientsstyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <!-- NAVBAR -->
+    <!-- Código referente à navbar -->
     <div class="container-menu">
         <nav class="sidebar close">
             <header>
@@ -67,8 +67,8 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="units.html">
-                                <i class='bx bxs-clinic icon'></i>
+                            <a href="#">
+                                <i class='bx bxs-clinic icon active'></i>
                                 <span class="text nav-text">Unidades</span>
                             </a>
                         </li>
@@ -102,14 +102,41 @@
             </div>
         </nav>
     </div>
-    <!--Fim da navbar -->
-    <main class="container-dashboard">
-        <h1>Equipes</h1>
+    <!-- Fim do código da navbar -->
 
-        <div class="team-container">
-        
+    <!-- Código referente ao conteúdo da página -->
+
+    <main class="container-dashboard">
+        <div class="patient-search">
+            <div class="search-box">
+                <input type="search" id="searchbox-patient" placeholder="Buscar paciente...">
+                <i class='bx bx-search-alt-2 icon'></i>
+            </div>
         </div>
 
-    <script src="js/teamsscript.js"></script>
+        <button class="download-patient-info">Download</button>
+        <div class="patients-with-title">
+            <h1 class="section-title" id="page-title-patients">Pacientes</h1>
+            
+            <div class="allpatient-info">   
+                <!-- Puxar as informações da página de menu-->
+            </div>
+        </div>
+
+
+
+
+    </main>
+    <script src="js/patientsscript.js"></script>
 </body>
 </html>
+
+<!--<div class="units-with-title">
+                <h1>Unidades</h1>
+                <div class="unit-summary">
+                    <div class="unit">
+                        <h2>Unidade 4</h2>
+                        <img class="unit-icon" src="img/hospital.png">
+                        <p>6 equipes</p>
+                        <p>30 integrantes</p>
+                    </div>  -->

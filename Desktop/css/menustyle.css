@@ -643,3 +643,14 @@ body.dark .sidebar header .toggle{
     }
   } */
 
+/*Trecho que reajusta a barra de pesquisa dentro do 'Exibir Todos'*/
+.search-box-topnav{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+#patient-search{
+    margin-right: 10px;
+}
+/**/

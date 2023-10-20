@@ -277,92 +277,21 @@ body.dark .sidebar header .toggle{
     margin-top: 10px;
 }
 
-/*Para aumentar o espaçamento entre as unidades e equipes*/
-.unit, .team{
-    padding: 30px;
-}
+/*Início do código referente a tela de paciente*/
+/*=============================================*/
 
-.team-icon{
-    width: 5rem;
-    height: 5rem;
-    margin-bottom: 0.4rem;
-    border-radius: 50%;
-}
 
-.teams-with-title{
-    margin-top: 60px;
-}
-
-.unit-info{
-    font-size: 0.8rem;
-    opacity: 65%;/*Abaixa a opacidade do nome da unidade, para criar diferença visual entre as informações*/
-}
-
-.unit-management{
-    float: right;
-    margin-left: 50px; /*empurra a div que contém 'Gerenciar Distribuição*/
-}
-
-.units-all{
+.search-box{
     display: flex;
-    flex-direction: row;
-}
-
-.unit-managed{
-    margin: 15px;
-}
-
-.manage-title{
-    display: flex;
-    flex-direction: row;
     align-items: center;
+    padding: 3px;
+}
+
+#searchbox-patient{
+    margin-right: 5px;/*empurra o ícone de lupa para direita, para não ficar grudado na search*/
+}
+
+.section-title{ /*Adiciona margens aos títulos de seção da página, na parte superior e inferior para criar maior separação visual*/
     margin-bottom: 15px;
-}
-
-.title-only{
-    margin-right: 160px;
-}
-
-/*How To Make An Accordion Using HTML And CSS | Collapsible Content On Website - https://www.youtube.com/watch?v=fSkhTd4rpDo*/
-.collapsible{
-    margin: 60px auto;
-    width: 660px;
-}
-
-.collapsible li{
-    list-style: none;
-    width: 100%;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    background: var(--primary-color-light);
-}
-
-.collapsible li label{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    cursor: pointer;
-}
-
-label::before{
-    content: '+';
-    margin-right: 10px;
-    font size: 24px;
-}
-
-/*Para esconder o input*/
-input[type="radio"]{
-    display: none;
-}
-
-.accordion .content{ /*Parte que é encarregada do estilo da parte interna da sanfona*/
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
-}
-
-.collapsible input[type="radio"]:checked + label + .content{
-    max-height: 400px;
-    padding: 10px 10px 20px;
+    margin-top: 15px;
 }
