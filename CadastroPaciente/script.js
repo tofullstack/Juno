@@ -9,3 +9,21 @@ function getAddress() {
         })
         .catch(error => console.error('Erro ao obter endereço:', error));
 }
+
+const input = document.querySelector('#CPFfield')
+
+input.addEventListener('keypress', ()=>{
+    let inputlength = input.value.length
+
+    if(inputlength==3){
+        input.value += '.'
+    }
+
+    if(inputlength==7){
+        input.value += '.'
+    }
+    if(inputlength==11){
+        input.value += '-'
+    }
+    console.log(inputlength)
+});

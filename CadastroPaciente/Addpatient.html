@@ -21,51 +21,51 @@
             </div>
 
             <div class="register-firstname">
-                <input type="number" required>
+                <input type="date" name="date00">
                 <span></span>
-                <label>Idade</label>
+                <label>Data de Nascimento</label>
             </div>
 
             <div class="register-CPF">
-                <input type="text" autocomplete="off" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF no formato: xxx.xxx.xxx-xx" id="CPFfield" required>
+                <input type="text" autocomplete="off" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
+                title="Digite um CPF no formato: xxx.xxx.xxx-xx" id="CPFfield" required>
                 <span></span>
                 <label>CPF</label>
             </div>
 
-            <div class="register-firstname">
+            <div class="register-CEP">
+                <input type="text" id="cep" name="cep" onblur="getAddress()">
                 <span></span>
-                <label for="cep">CEP:</label>
-                <input type="text" id="cep" name="cep" onblur="getAddress()"><br><br>
-                
+                <label for="cep">CEP</label>
             </div>
 
-            <div class="register-firstname">
-                <label for="rua">Rua:</label>
-                <input type="text" id="rua" name="rua"><br><br>
-                
+            <div class="register-address">
+                <label for="rua">Rua</label>
+                <span></span>
+                <input type="text" id="rua" name="rua">
             </div>
 
-            <div class="register-firstname">
-                <label for="cidade">Cidade:</label>
-                <input type="text" id="cidade" name="cidade"><br><br>
-                
+            <div class="register-address">
+                <label for="cidade">Cidade</label>
+                <span></span>
+                <input type="text" id="cidade" name="cidade">
             </div>
 
-            <div class="register-firstname">
-                <label for="estado">Estado:</label>
-                <input type="text" id="estado" name="estado"><br><br>
-                
+            <div class="register-address">
+                <label for="estado">Estado</label>
+                <span></span>
+                <input type="text" id="estado" name="estado">
             </div>
 
             <div class="register-firstname">
                 <input type="text" required>
-               
+                <span></span>
                 <label>Etnia</label>
             </div>
 
             <div class="register-firstname">
                 <input type="date" name="date01">
-                <span></span>  
+                <span></span> 
                 <label> Data da Última Menstruação (DUM)</label>
             </div>
            
