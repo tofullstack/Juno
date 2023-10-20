@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juno - Unidades</title>
+    <!-- Links para o Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Inter&family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/unitsstyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Creditos -->
+    <!-- <a href="https://www.flaticon.com/free-icons/hospital" title="hospital icons">Hospital icons created by Freepik - Flaticon</a> 
+    <a href="https://www.flaticon.com/free-icons/nurse" title="nurse icons">Nurse icons created by Freepik - Flaticon</a>-->
+</head>
+<body>
+     <!-- Porção que constrói a navbar -->
+     <div class="container-menu">
+        <nav class="sidebar close">
+            <header>
+                <div class="image-text">
+                    <span class="image">
+                        <img src="img/logo.png" alt="Logo Juno">
+                    </span>
+                    <div class="text header-text">
+                        <span class="name">JUNO</span>
+                        <span class="profession">Olá Renata!</span>
+                    </div>
+                </div>
+                <i class='bx bx-chevron-right toggle'></i>
+            </header>
+            <div class="menu-bar">
+                <div class="menu">
+                    <ul class="menu-links">
+                        <li class="search-box">
+                            <i class='bx bx-search-alt-2 icon'></i>
+                            <input type="search" placeholder="Buscar...">
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="menu.html">
+                                <i class='bx bx-home-circle icon'></i>
+                                <span class="text nav-text">Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-bar-chart-alt-2 icon'></i>
+                                <span class="text nav-text">Estatísticas</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bx-id-card icon'></i>
+                                <span class="text nav-text">Pacientes</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="map.html">
+                                <i class='bx bx-map icon'></i>
+                                <span class="text nav-text">Mapeamento</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bxs-file-doc icon'></i>
+                                <span class="text nav-text">Relatório</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <i class='bx bxs-clinic icon active'></i>
+                                <span class="text nav-text">Unidades</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="teams.html">
+                                <i class='bx bx-group icon'></i>
+                                <span class="text nav-text">Equipes</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-content">
+                    <li class="nav-link">
+                        <a href="#" id="logoutBtn">
+                            <i class='bx bx-log-out icon'></i>
+                            <span class="text nav-text">Sair</span>
+                        </a>
+                    </li>
+                    <li class="mode">
+                        <div class="moon-sun">
+                            <i class='bx bx-moon icon moon'></i>
+                            <i class='bx bx-sun icon sun'></i>
+                        </div>
+                        <span class="mode-text text"></span>
+
+                        <div class="toggle-switch">
+                            <span class="switch"></span>
+                        </div>
+                    </li>
+                </div>
+            </div>
+        </nav>
+    </div>
+     <!--Fim da navbar -->
+        
+     <!-- Porção que constrói o conteúdo da página -->
+
+     <main class="container-dashboard">
+        <div class="units-all"> <!-- pega as 3 div para poder fazer a manipulação do css -->
+        <div class="unit-and-team">
+            <div class="units-with-title">
+                <h1>Unidades</h1>
+                <div class="unit-summary">
+                    <div class="unit">
+                        <h2>Unidade 4</h2>
+                        <img class="unit-icon" src="img/hospital.png">
+                        <p>6 equipes</p>
+                        <p>30 integrantes</p>
+                    </div>
+
+                    <div class="unit">
+                        <h2>Unidade 5</h2>
+                        <img class="unit-icon" src="img/hospital.png" style="filter: hue-rotate(45deg)"> <!---->
+                        <p>3 equipes</p>
+                        <p>24 integrantes</p>
+                    </div>
+
+                    <div class="unit">
+                        <h2>Unidade 6</h2>
+                        <img class="unit-icon" src="img/hospital.png" style="filter: hue-rotate(90deg)">
+                        <p>8 equipes</p>
+                        <p>42 integrantes</p>
+                    </div>
+                    <div class="unit">
+                        <h2>Unidade 7</h2>
+                        <img class="unit-icon" src="img/hospital.png" style="filter: hue-rotate(135deg)">
+                        <p>4 equipes</p>
+                        <p>12 integrantes</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="teams-with-title">
+                <h1>Equipes por Unidade</h1>
+                <div class="unit-teams">
+                    <div class="team">
+                        <!-- https://www.gigacalculator.com/randomizers/random-alphanumeric-generator.php -->
+                        <h2>Equipe WVT07</h2>
+                        <img class="team-icon" src="img/medical-team.png" style="background-color: #ef476f;">
+                        <p>5 integrantes,</p>
+                        <p>2 médicos/3 enfermeiros</p>
+                        <p class="unit-info">Unidade 4</p>
+                    </div>
+
+                    <div class="team">
+                        <h2>Equipe 6XQM7</h2>
+                        <img class="team-icon" src="img/medical-team.png" style="background-color: #1b9aaa;">
+                        <p>12 integrantes,</p>
+                        <p>3 médicos/7 enfermeiros</p>
+                        <p class="unit-info">Unidade 5</p>
+                    </div>
+
+                <div class="team">
+                    <h2>Equipe 1BXS6</h2>
+                    <img class="team-icon" src="img/medical-team.png" style="background-color: #06d6a0;">
+                    <p>8 integrantes,</p>
+                    <p>2 médicos/6 enfermeiros</p>
+                    <p class="unit-info">Unidade 7</p>
+                </div>
+            </div><!--Fim da unit-teams -->
+        </div>
+    </div> <!-- fim da unit and team-->
+
+    <div class="unit-management">
+        <h1>Gerenciar Distribuição</h1>
+        <div class="unit-manage">
+
+
+        </div>
+    </div>
+
+    </div><!-- fim da units all-->
+    <script src="js/unitscript.js"></script>
+</body>
+</html>
