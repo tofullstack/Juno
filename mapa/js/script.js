@@ -63,3 +63,4 @@ function checkLogin(){
     */
     window.location.href = "menu.html";
 }
+

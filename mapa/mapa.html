@@ -12,10 +12,27 @@
 
 <body>
     <div class="container-map">
+
         <div class="top-bar">
+
             <div class="pesquisa">
-                <input type="text" placeholder="Pesquisar..." id="barra-de-pesquisa" required="">
+                <input  type="text" placeholder="Pesquisar..." id="barra-de-pesquisa" oninput="mostrarsugestoes()">
+                <button class="sugestoes" id="limpar-pesquisa" onclick="limparInput()">X</button>
+                <div class="sugestoes">
+                    <b>area 1</b>
+                    <b>area 2</b>
+                    <b>area 3</b>
+                    <b>area 4</b>
+                    <b>area 4</b>
+                    <b>area 5</b>
+                    <b>area 6</b>
+                    <b>area 7</b>
+                    <b>area 8</b>
+                    <b>area 9</b>
+                    <b>area 10</b>
+                </div>
             </div>
+
             <div class="scrol-area">
                 <button id="area" type="button">area 1</button>
                 <button id="area" type="button">area 2</button>
@@ -107,6 +124,7 @@
             </div>
         </nav>
     </div>
+    <script src="js/mapa.js"></script>
     <script src="js/menuscript.js"></script>
 </body>
 
