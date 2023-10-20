@@ -268,7 +268,7 @@ body.dark .sidebar header .toggle{
     border-radius: 50%;
 }
 
-.unit-summary{
+.unit-summary, .unit-teams, .unit-list{
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -280,15 +280,6 @@ body.dark .sidebar header .toggle{
 /*Para aumentar o espaçamento entre as unidades e equipes*/
 .unit, .team{
     padding: 30px;
-}
-
-.unit-teams{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    background: var(--primary-color-light);
-    border-radius: 8px;
-    margin-top: 10px;
 }
 
 .team-icon{
@@ -317,3 +308,17 @@ body.dark .sidebar header .toggle{
     flex-direction: row;
 }
 
+.unit-managed{
+    margin: 15px;
+}
+
+.manage-title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.title-only{
+    margin-right: 160px;
+}
