@@ -6,49 +6,78 @@
     <title>Juno - Cadastrar Paciente</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Assistant&family=Inter&family=Montserrat&family=Raleway&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Inter&family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="registerstyle.css">
 </head>
 <body>
-        <div class="center">
-            <form method="post">
-                <h1>Cadastro de Paciente</h1>
+    <div class="center">
+        <form method="post">
+            <h1>Cadastro de Paciente</h1>
 
             <div class="register-firstname">
                 <input type="text" required>
                 <span></span>
                 <label>Nome completo</label>
             </div>
+
             <div class="register-firstname">
                 <input type="number" required>
                 <span></span>
                 <label>Idade</label>
             </div>
+
             <div class="register-CPF">
-                <input type="text" autocomplete="off" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
-                    title="Digite um CPF no formato: xxx.xxx.xxx-xx" id="CPFfield" required>
+                <input type="text" autocomplete="off" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Digite um CPF no formato: xxx.xxx.xxx-xx" id="CPFfield" required>
                 <span></span>
                 <label>CPF</label>
             </div>
+
+            <div class="register-firstname">
+                <span></span>
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" onblur="getAddress()"><br><br>
+                
+            </div>
+
+            <div class="register-firstname">
+                <label for="rua">Rua:</label>
+                <input type="text" id="rua" name="rua"><br><br>
+                
+            </div>
+
+            <div class="register-firstname">
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade"><br><br>
+                
+            </div>
+
+            <div class="register-firstname">
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado"><br><br>
+                
+            </div>
+
             <div class="register-firstname">
                 <input type="text" required>
-                <span></span>
+               
                 <label>Etnia</label>
             </div>
+
             <div class="register-firstname">
                 <input type="date" name="date01">
                 <span></span>  
-                <label>Início Da Gestação</label>
+                <label> Data da Última Menstruação (DUM)</label>
             </div>
+           
             <div class="register-firstname">
                 <input type="date" name="date02">
                 <span></span>  
-                <label>Fim Da Gestação</label>
+                <label>Data Provável do Parto (DPP)</label>
             </div>
-            <div class="register-firstname">
-                <select name="Blood" >
+
+            <div>
+                <select name="Bloodtype">
+                    <option value="empty"></option>
                     <option value="A">A</option>
                     <option value="B">B</option>
                     <option value="AB">AB</option>
@@ -56,19 +85,23 @@
                 </select>
                 <label>Tipo Sanguíneo</label>
             </div>
-            <div class="register-firstname">
-                <select name="Rh">
-                    <option value="+">+</option>
-                    <option value="-">-</option>
-                    <label>Fator RH</label>
-                </select>
+
+            <div>
+                <form>
+                    <h4>Fator RH</h4>
+                    <input type="radio" id="Positive" name="fatorRH" value="opcao1">
+                    <label for="opcao1">Positivo</label><br>
+                    <input type="radio" id="Negativo" name="fatorRH" value="opcao2">
+                    <label for="opcao2">Negativo</label><br>
+                </form>
             </div>
+
             <div class="register-button">
                 <input type="submit" value="Cadastrar Paciente">
             </div>
 
-            </form>
-
-        </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
