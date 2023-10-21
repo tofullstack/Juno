@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/menustyle.css">
     <link rel="stylesheet" href="css/mapa.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Juno - Mapeamento</title>
+    <title>Menu</title>
 </head>
 
 <body>
@@ -15,10 +15,10 @@
 
         <div class="top-bar">
 
-            <div class="pesquisa">
-                <input  type="text" placeholder="Pesquisar..." id="barra-de-pesquisa" oninput="mostrarsugestoes()">
-                <button class="sugestoes" id="limpar-pesquisa" onclick="limparInput()">X</button>
-                <div class="sugestoes">
+            <div class="search">
+                <input  type="text" placeholder="Pesquisar..." id="search-bar" oninput="showsuggestions()">
+                <button class="suggestions" id="clear-search" onclick="clearInput()">X</button>
+                <div class="suggestions">
                     <b>area 1</b>
                     <b>area 2</b>
                     <b>area 3</b>
@@ -34,21 +34,21 @@
             </div>
 
             <div class="scrol-area">
-                <button id="area" type="button">Área 1</button>
-                <button id="area" type="button">Área 2</button>
-                <button id="area" type="button">Área 3</button>
-                <button id="area" type="button">Área 4</button>
-                <button id="area" type="button">Área 5</button>
-                <button id="area" type="button">Área 6</button>
+                <button class="area" type="button">Área 1</button>
+                <button class="area" type="button">Área 2</button>
+                <button class="area" type="button">Área 3</button>
+                <button class="area" type="button">Área 4</button>
+                <button class="area" type="button">Área 5</button>
+                <button class="area" type="button">Área 6</button>
             </div>
         </div>
         <div class="map">
-            <iframe class="size-map" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d57642.16030225633!2d-54.576602!3d-25.450463!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1697511472178!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="size-map" src="https://www.google.com/maps/d/u/0/embed?mid=1YOtfxyWNxdsaUEeNJuYbCryOlKnbIIk&ehbc=2E312F&noprof=1" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
 
     </div>
-       <!-- NAVBAR -->
-       <div class="container-menu">
+    <!-- Porção que constrói a navbar -->
+    <div class="container-menu">
         <nav class="sidebar close">
             <header>
                 <div class="image-text">
@@ -90,7 +90,7 @@
                             </a>
                         </li>
                         <li class="nav-link">
-                            <a href="map.html">
+                            <a href="mapa.html">
                                 <i class='bx bx-map icon'></i>
                                 <span class="text nav-text">Mapeamento</span>
                             </a>
@@ -103,7 +103,7 @@
                         </li>
                         <li class="nav-link">
                             <a href="units.html">
-                                <i class='bx bxs-clinic icon'></i>
+                                <i class='bx bxs-clinic icon active'></i>
                                 <span class="text nav-text">Unidades</span>
                             </a>
                         </li>
@@ -137,6 +137,7 @@
             </div>
         </nav>
     </div>
+     <!--Fim da navbar -->
     <script src="js/mapa.js"></script>
     <script src="js/menuscript.js"></script>
 </body>

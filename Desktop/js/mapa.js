@@ -1,9 +1,9 @@
-var elementos = document.querySelectorAll('.sugestoes');
-var inputElement = document.getElementById('barra-de-pesquisa');
-function mostrarsugestoes() {
-    var textoDigitado = inputElement.value;
+var elementos = document.querySelectorAll('.suggestions');
+var inputElement = document.getElementById('search-bar');
+function showsuggestions() {
+    var textTyped = inputElement.value;
 
-    if (textoDigitado !== "") {
+    if (textTyped !== "") {
         elementos.forEach(function(elemento) {
             elemento.style.opacity = 1;
         });
@@ -13,7 +13,7 @@ function mostrarsugestoes() {
         });
     }
 }
-function limparInput() {
+function clearInput() {
     inputElement.value = ""; // Define o valor do input como vazio
     elementos.forEach(function(elemento) {
         elemento.style.opacity = 0;
