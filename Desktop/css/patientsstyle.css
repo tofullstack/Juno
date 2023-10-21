@@ -24,7 +24,7 @@
     --padding-1: 1.2rem;
     --box-shadow: 0 2rem 3rem var(--color-light);
 
-    --color-sucess: #99cc33;
+    --color-success: #99cc33;
     --color-danger: #ff4545;
     --color-medium: #fa9f47;
 
@@ -280,6 +280,79 @@ body.dark .sidebar header .toggle{
 }
 
 /*Início do código referente a tela de paciente*/
+.container-dashboard .pacient-list{
+    background-color: var(--primary-color-light);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .container-dashboard .pacient-list:hover{
+      box-shadow: none;
+  }
+  .container-dashboard .pacient-list .pacient{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .container-dashboard .pacient-list .pacient img{
+      width: 5rem;
+      height: 5rem;
+      margin-bottom: 0.4rem;
+      border-radius: 50%;
+  }
+  
+  .container-dashboard  .pacient-order{
+      margin-top: 1.3rem; 
+  }
+  .container-dashboard .pacient-order h2{
+      margin-bottom: 0.8rem; 
+  }
+  .container-dashboard .pacient-order table{
+     background-color: var(--primary-color-light); 
+     width: 70vw;
+     padding: var(--card-padding);
+     text-align: center;
+     box-shadow: var(--box-shadow);
+     /* border-radius: var(--card-border-radius); */
+     transition: all 0.3s ease;
+  }
+  .container-dashboard .pacient-order table:hover{
+      box-shadow: none;
+  }
+  
+  .container-dashboard table tbody td{
+      height: 2.8rem;
+      border-bottom: 1px solid var(--toggle-color);
+      /* color: var(--text-color); */
+  }
+  .container-dashboard table tbody tr:last-child td{
+      border: none;
+  }
+  .container-dashboard .pacient-order a{
+      display: block;
+      margin: 1rem auto;
+      text-align: center;
+      color: var(--text-color);
+  }
+  .danger {
+      color: var(--color-danger);
+  }
+  
+  .medium {
+      color: var(--color-medium);
+  }
+  
+  .success {
+      color: var(--color-success);
+  }
 /*=============================================*/
 
 
