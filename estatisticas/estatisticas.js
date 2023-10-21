@@ -29,8 +29,8 @@ var dados = {
         label: 'Pacientes por mes',
         data: [12, 19, 10, 14, 6, 9, 21, 4, 15, 11, 14, 3],
         borderColor: 'blue', 
-        borderWidth: 2, // Largura da linha do gráfico
-        tension: 0.4, // Valor de tensão para suavizar as linhas
+        borderWidth: 2, 
+        tension: 0.4, 
         pointRadius: 2,
         hoverRadius: 6,
         borderSkipped: 'top'
@@ -109,7 +109,7 @@ function showInfo(date) {
 
     const infoWithLineBreak = info + '<br>';
 
-    // Atualiza o conteúdo da info-area com as informações correspondentes à data selecionada
+    
     infoContentElement.textContent = info;
 }
 
@@ -129,7 +129,6 @@ var dadosColunas = {
         label: 'microareas',
         data: [8, 15],
         backgroundColor: 'green',
-        borderColor: 'transparent',
         borderWidth: 2,
     }]
 };

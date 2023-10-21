@@ -309,35 +309,42 @@ body.dark .sidebar header .toggle {
     color: #ffc7c5;
 }
 
-\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
 
 .lines-graph-container {
-    margin-top: 100px;
-    margin-left: 100px;
     position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: white;
     max-width: 70%;
+    border-radius: 5px;
+    border: #ccc;
+    
 }
 
+
 .bar-graph-container {
-    margin-top: 450px;
-    margin-left: 750px;
+    margin-top: 350px;
+    margin-left: 550px;
+    margin-right: 200px;
     position: fixed;
     background-color: white;
-    max-width: 70%;
+    max-width: 100%;
     border-radius: 15px;
+    
 }
 
 .legenda {
-    font-family: Arial, sans-serif; 
-    font-size: 14px; 
-    color: #333; 
-    margin-top: 10px; 
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
 }
 
 
 .legenda div {
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 }
 
 body {
@@ -351,10 +358,10 @@ body {
 .calendar {
     background-color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 10px;
     position: fixed;
-    top: 100px;
-    right: 50px;
+    right: 10px;
+
 }
 
 .month {
@@ -394,36 +401,48 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: fixed;
     overflow: auto;
-    top: 450px;
-    right: 50px;
-    width: 300px;
+    top: 330px;
+    right: 10px;
+    width: 270px;
     height: 350px;
 }
 
 .last-patients {
-    margin-top: 4%;
-    margin-left: 10%;
-    width: 450px; 
-    height: 300px; 
-    overflow-y: scroll; 
-    border: 1px solid #ccc; 
+    margin-top: 50px;
+    margin-left: 7%;
+    width: 450px;
+    height: 300px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
     background-color: white;
 }
 
 .conteudo {
     display: flex;
     flex-direction: column;
-    padding: 10px; 
+    padding: 10px;
 }
 
 h2 {
-    margin: 0; 
-    text-align: center; 
+    margin: 0;
+    text-align: center;
 }
 
-.notificacao {
-    margin-bottom: 10px; 
+.notificacao  {
+    margin-bottom: 10px;
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #f9f9f9;
 }
+.dark .calendar {
+    color: #EF8481;
+    background-color: #18191A;
+    border-color: #EF8481;
+    
+}
+body.dark {
+
+    background: #18191A;
+}
+
+
