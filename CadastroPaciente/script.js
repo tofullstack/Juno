@@ -27,3 +27,6 @@ input.addEventListener('keypress', ()=>{
     }
     console.log(inputlength)
 });
+
+
+

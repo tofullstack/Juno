@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juno - Cadastrar Paciente</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Inter&family=Montserrat&family=Raleway&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant&family=Inter&family=Montserrat&family=Raleway&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="registerstyle.css">
 </head>
+
 <body>
     <div class="center">
         <form method="post">
@@ -20,41 +24,41 @@
                 <label>Nome completo</label>
             </div>
 
-            <div class="register-firstname">
-                <input type="date" name="date00">
+            <div class="register-date">
+                <input type="date" name="date00" id="date00" required>
                 <span></span>
-                <label>Data de Nascimento</label>
+                <label for="date00">Data de Nascimento</label>
             </div>
 
             <div class="register-CPF">
-                <input type="text" autocomplete="off" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" 
-                title="Digite um CPF no formato: xxx.xxx.xxx-xx" id="CPFfield" required>
+                <input type="text" autocomplete="off" maxlength="14" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                    title="Digite um CPF no formato: xxx.xxx.xxx-xx" id="CPFfield" required>
                 <span></span>
                 <label>CPF</label>
             </div>
 
-            <div class="register-CEP">
-                <input type="text" id="cep" name="cep" onblur="getAddress()">
+            <div class="register-firstname">
+                <input type="text" id="cep" name="cep" onblur="getAddress()" required>
                 <span></span>
                 <label for="cep">CEP</label>
             </div>
 
-            <div class="register-address">
+            <div class="register-firstname">
+                <input type="text" id="rua" name="rua" required>
+                <span></span>
                 <label for="rua">Rua</label>
-                <span></span>
-                <input type="text" id="rua" name="rua">
             </div>
 
-            <div class="register-address">
+            <div class="register-firstname">
+                <input type="text" id="cidade" name="cidade" required>
+                <span></span>
                 <label for="cidade">Cidade</label>
-                <span></span>
-                <input type="text" id="cidade" name="cidade">
             </div>
 
-            <div class="register-address">
-                <label for="estado">Estado</label>
+            <div class="register-firstname">
+                <input type="text" id="estado" name="estado" required>
                 <span></span>
-                <input type="text" id="estado" name="estado">
+                <label for="estado">Estado</label>
             </div>
 
             <div class="register-firstname">
@@ -63,37 +67,37 @@
                 <label>Etnia</label>
             </div>
 
-            <div class="register-firstname">
-                <input type="date" name="date01">
-                <span></span> 
-                <label> Data da Última Menstruação (DUM)</label>
-            </div>
-           
-            <div class="register-firstname">
-                <input type="date" name="date02">
-                <span></span>  
-                <label>Data Provável do Parto (DPP)</label>
+            <div class="register-date">
+                <input type="date" name="date01" id="date01" required>
+                <span></span>
+                <label for="date01"> Data da Última Menstruação (DUM)</label>
             </div>
 
-            <div>
-                <select name="Bloodtype">
-                    <option value="empty"></option>
+            <div class="register-date">
+                <input type="date" name="date02" id="date02" required>
+                <span></span>
+                <label for="date02">Data Provável do Parto (DPP)</label>
+            </div>
+
+            <div class="register-bloodtype">
+                <select name="Bloodtype" class="select-input" id="Bloodtype">
+                    <option value="Tipo Sanguíneo">Tipagem Sanguínea</option>
                     <option value="A">A</option>
                     <option value="B">B</option>
                     <option value="AB">AB</option>
                     <option value="O">O</option>
                 </select>
-                <label>Tipo Sanguíneo</label>
+                <label></label>
             </div>
 
-            <div>
-                <form>
-                    <h4>Fator RH</h4>
+            <div class="register-rhfactor">
+                <p>Fator RH</p>
+                <div class="radio-container">
                     <input type="radio" id="Positive" name="fatorRH" value="opcao1">
                     <label for="opcao1">Positivo</label><br>
                     <input type="radio" id="Negativo" name="fatorRH" value="opcao2">
                     <label for="opcao2">Negativo</label><br>
-                </form>
+                </div>
             </div>
 
             <div class="register-button">
@@ -104,4 +108,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
