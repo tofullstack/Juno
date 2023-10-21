@@ -9,6 +9,7 @@
     --toggle-color: #ddd;
     --text-color: #707070;
     --color-light: rgba(132, 139, 200, 0.18);
+    --button-bg-color: #EF8481;
 
     --tran-02:: all 0.2s ease;
     --tran-03: all 0.3s ease;
@@ -59,6 +60,7 @@ body.dark{
     --primary-color-light: #3A3B3C;
     --toggle-color: #ddd;
     --text-color: #CCC;
+    --button-bg-color: #8883F0;
 }
 
 .container {
@@ -291,7 +293,19 @@ body.dark .sidebar header .toggle{
     margin-right: 5px;/*empurra o ícone de lupa para direita, para não ficar grudado na search*/
 }
 
+.patient-search{
+    margin-bottom: 8px;
+}
+
 .section-title{ /*Adiciona margens aos títulos de seção da página, na parte superior e inferior para criar maior separação visual*/
     margin-bottom: 15px;
     margin-top: 15px;
+}
+
+.download-patient-info{
+    background: var(--button-bg-color);
+    border-radius: 8px;
+    padding: 8px;
+    color: #FFF;
+    
 }
