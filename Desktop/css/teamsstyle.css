@@ -368,3 +368,13 @@ body.dark .sidebar header .toggle{
     align-items: center;
     justify-content: space-between;
 }
+
+.organize-team{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.manage-distribution{
+    margin-left: 30px;
+}
