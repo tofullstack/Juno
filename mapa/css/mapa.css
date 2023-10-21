@@ -20,8 +20,9 @@ html {
     z-index: 0;
     position: absolute;
     right: 0;
+    bottom: 0;
     width: 110%;
-    height: 100%;
+    height: 110%;
 ;
 }
 
@@ -35,7 +36,7 @@ html {
     height: 10vh;
 }
 
-#barra-de-pesquisa{
+#search-bar{
     z-index: 1;
     position: relative;
     border: #626262;
@@ -52,7 +53,7 @@ html {
 
 }
 
-#limpar-pesquisa{
+#clear-search{
     overflow-y: none;
     position: absolute;
     z-index: 6;
@@ -68,11 +69,7 @@ html {
     color: var(--text-color);
 }
 
-.pesquisa#barra-de-pesquisa:hover > .sugestoes{
-    background-color: #ef476f;
-}
-
-.sugestoes{
+.suggestions{
     opacity: 0;
     overflow-y: scroll;
     z-index: 0;
@@ -105,12 +102,12 @@ html {
     background: var(--text-color);
     border-radius: 20px;
 }
-.sugestoes b{
+.suggestions b{
     padding-top: 1vw;
     margin-left: 1vw;
 }
 
-#area{
+.area{
     border: #626262;
     border-radius: 50px;
     color: var(--text-color);
@@ -122,7 +119,7 @@ html {
     text-align: center;
 }
 
-#area:hover{
+.area:hover{
     background: var(--primary-color);
     color: var(--sidebar-color);
 }
