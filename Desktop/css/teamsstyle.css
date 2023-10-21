@@ -265,9 +265,106 @@ body.dark .sidebar header .toggle{
     margin-top: 1.4rem;
 }
 
-.team-icon{
+.doctor-icon, .nurse-icon, .administration-icon{
     width: 5rem;
     height: 5rem;
     margin-bottom: 0.4rem;
     border-radius: 50%;
+}
+
+.mdteam-btn{
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--primary-color-light);
+    color: var(--text-color);
+}
+
+.doctors, .nurses, .administration{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background: var(--primary-color-light);
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+.doctor-info, .nurse-info, .admin-info{
+    padding: 20px;
+}
+
+.specialty{
+    opacity: 75%;
+}
+
+.subtitle-teams{
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#accordion-list{
+    margin: 10px auto;
+    width: 600px;
+}
+
+#accordion-list li{
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: var(--sidebar-color);
+}
+
+#accordion-list li label{
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
+    background: var(--primary-color-light); 
+}
+
+#accordion-list li label span::before{
+    transform: rotate(5deg);
+    font-size: 22px;
+}
+
+#accordion-list label + input[type="radio"]{
+    display: none;
+}
+
+
+#accordion-list label + input[type="radio"]:checked + .tab-content{
+    max-height: 100%;
+    padding: 10px;
+    /* background-color: #99cc33; */
+    background-color: var(--sidebar-color);
+    
+}
+
+
+#accordion-list .tab-content{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#accordion-list .tab-content ul li{
+    padding: 10px;
+    /* background-color: #EF8481; */
+    background-color: var(--primary-color-light);
+}
+.tab-content li{
+    padding: 1px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
