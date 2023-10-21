@@ -23,7 +23,7 @@
     --padding-1: 1.2rem;
     --box-shadow: 0 2rem 3rem var(--color-light);
 
-    --color-sucess: #99cc33;
+    --color-success: #99cc33;
     --color-danger: #ff4545;
     --color-medium: #fa9f47;
 
@@ -318,7 +318,7 @@ body.dark .sidebar header .toggle{
     stroke-dasharray: 100;
 }
 .container-dashboard .tests svg circle{
-    stroke: var(--color-sucess);
+    stroke: var(--color-success);
     stroke-dashoffset: -30;
     stroke-dasharray: 180;
 }
@@ -405,8 +405,8 @@ body.dark .sidebar header .toggle{
     color: var(--color-medium);
 }
 
-.sucess {
-    color: var(--color-sucess);
+.success {
+    color: var(--color-success);
 }
 
 /* MAPEMENTO */
@@ -508,7 +508,7 @@ body.dark .sidebar header .toggle{
     background-color: var(--color-danger);
 }
 .right-section .reminders .notification.deactive.alert .icon{
-    background-color: var(--color-sucess);
+    background-color: var(--color-success);
 }
 .new{
     font-size: 10px;

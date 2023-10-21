@@ -54,7 +54,32 @@ const body = document.querySelector("body"),
             dentistStatus: 'Pendente',
             testStatus: 'Pendente',
             pacientStatus: 'Inativo'
+        },
+        {
+            pacientName: 'Suelen Cabral',
+            pacientNumber: '292913',
+            preNatalStatus: 'Em dia',
+            dentistStatus: 'Pendente',
+            testStatus: 'Pendente',
+            pacientStatus: 'Pendente'
+        },
+        {
+            pacientName: 'Taina Borges',
+            pacientNumber: '300123',
+            preNatalStatus: 'Pendente',
+            dentistStatus: 'Em dia',
+            testStatus: 'Em dia',
+            pacientStatus: 'Ativo'
+        },
+        {
+            pacientName: 'Tatiane Chargas',
+            pacientNumber: '300283',
+            preNatalStatus: 'Em dia',
+            dentistStatus: 'Pendente',
+            testStatus: 'Em dia',
+            pacientStatus: 'Pendente'
         }
+
     ]
     // salvando a lista no localStorage
     localStorage.setItem('pacientList', JSON.stringify(List));
