@@ -21,6 +21,7 @@ const body = document.querySelector("body"),
         });
     });
 
+    //Implementaçao dinmâmica do HTML da Lista de Pacientes
     const List = [
         {
             pacientName: 'Emily Ticotico',
@@ -55,27 +56,31 @@ const body = document.querySelector("body"),
             pacientStatus: 'Inativo'
         }
     ]
+    // salvando a lista no localStorage
+    localStorage.setItem('pacientList', JSON.stringify(List));
 
-    List.forEach(order =>{
-        const tr = document.createElement('tr');
-        const trContent = `
-            <td>${order.pacientName}</td>
-            <td>${order.pacientNumber}</td>
-            <td>${order.preNatalStatus}</td>
-            <td>${order.dentistStatus}</td>
-            <td>${order.testStatus}</td>
+    function generateTableContent(data) {
+        return data.map(order => `
+            <tr>
+                <td>${order.pacientName}</td>
+                <td>${order.pacientNumber}</td>
+                <td>${order.preNatalStatus}</td>
+                <td>${order.dentistStatus}</td>
+                <td>${order.testStatus}</td>
+                <td class="${order.pacientStatus === 'Inativo' ? 'danger' : order.pacientStatus === 'Pendente' ? 'medium' : 'success'}">${order.pacientStatus}</td>
+                <td class="primary">Detalhes</td>
+            </tr>
+        `).join('');
+    }
+    // selecionando os elementos tanto da tela principal quanto do modal
+    const mainTableBody = document.querySelector('.pacient-order table tbody');
+    const modalTableBody = document.querySelector('.modal .pacient-order table tbody');
 
-            <td class="${order.pacientStatus === 'Inativo' ? 'danger' : order.pacientStatus === 'Pendente' ? 'medium' : 'sucess'}">${order.pacientStatus}</td>
-
-            <td class="primary">Detalhes</td>`;
-
-            tr.innerHTML = trContent;
-            // document.querySelector('#demo-modal').appendChild(tr);
-            document.querySelector('table tbody').appendChild(tr);
-
-
-    });
+    // enviando o conteudo para a tela principal e para o modal
+    mainTableBody.innerHTML = generateTableContent(List);
+    modalTableBody.innerHTML = generateTableContent(List);
     
+    // Menu notificações
 document.getElementById("menu-btn").onclick = 
 function openNotifBox(){
     document.getElementById("menu-btn").onclick = function () {
