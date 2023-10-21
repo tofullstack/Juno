@@ -323,46 +323,69 @@ body.dark .sidebar header .toggle{
     margin-right: 160px;
 }
 
-/*How To Make An Accordion Using HTML And CSS | Collapsible Content On Website - https://www.youtube.com/watch?v=fSkhTd4rpDo*/
-.collapsible{
-    margin: 60px auto;
-    width: 660px;
+#accordion-list{
+    margin: 10px auto;
+    width: 600px;
 }
 
-.collapsible li{
+#accordion-list li{
     list-style: none;
     width: 100%;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+#accordion-list li label{
+    padding: 20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 800;
+    cursor: pointer;
     background: var(--primary-color-light);
 }
 
-.collapsible li label{
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    cursor: pointer;
+#accordion-list li label span::before{
+    transform: rotate(5deg);
+    font-size: 22px;
 }
 
-label::before{
-    content: '+';
-    margin-right: 10px;
-    font size: 24px;
-}
-
-/*Para esconder o input*/
-input[type="radio"]{
+#accordion-list label + input[type="radio"]{
     display: none;
 }
 
-.accordion .content{ /*Parte que é encarregada do estilo da parte interna da sanfona*/
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
+
+#accordion-list label + input[type="radio"]:checked + .tab-content{
+    max-height: 100%;
+    padding: 10px;
+    background: var(--primary-color-light);
 }
 
-.collapsible input[type="radio"]:checked + label + .content{
-    max-height: 400px;
-    padding: 10px 10px 20px;
+
+#accordion-list .tab-content{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
+
+.tab-content li{
+    padding: 1px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.manage-distribution h1{
+    margin-left: 60px;
+ }
+
+ .manage-distribution{
+    margin-left: 50px;
+ }
