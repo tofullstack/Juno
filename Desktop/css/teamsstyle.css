@@ -264,3 +264,10 @@ body.dark .sidebar header .toggle{
     color: var(--text-color);
     margin-top: 1.4rem;
 }
+
+.team-icon{
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 0.4rem;
+    border-radius: 50%;
+}

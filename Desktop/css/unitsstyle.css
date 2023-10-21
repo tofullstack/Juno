@@ -321,6 +321,7 @@ body.dark .sidebar header .toggle{
 
 .title-only{
     margin-right: 160px;
+    
 }
 
 #accordion-list{
@@ -332,7 +333,8 @@ body.dark .sidebar header .toggle{
     list-style: none;
     width: 100%;
     margin-bottom: 10px;
-    border-radius: 4px;
+    border-radius: 8px;
+    background: var(--sidebar-color);
 }
 
 #accordion-list li label{
@@ -345,7 +347,7 @@ body.dark .sidebar header .toggle{
     font-size: 20px;
     font-weight: 800;
     cursor: pointer;
-    background: var(--primary-color-light);
+    background: var(--primary-color-light); 
 }
 
 #accordion-list li label span::before{
@@ -361,7 +363,9 @@ body.dark .sidebar header .toggle{
 #accordion-list label + input[type="radio"]:checked + .tab-content{
     max-height: 100%;
     padding: 10px;
-    background: var(--primary-color-light);
+    /* background-color: #99cc33; */
+    background-color: var(--sidebar-color);
+    
 }
 
 
@@ -374,6 +378,11 @@ body.dark .sidebar header .toggle{
     border-bottom-right-radius: 8px;
 }
 
+#accordion-list .tab-content ul li{
+    padding: 10px;
+    /* background-color: #EF8481; */
+    background-color: var(--primary-color-light);
+}
 .tab-content li{
     padding: 1px;
     border-radius: 10px;
@@ -382,10 +391,7 @@ body.dark .sidebar header .toggle{
     justify-content: space-between;
 }
 
-.manage-distribution h1{
-    margin-left: 60px;
- }
-
  .manage-distribution{
     margin-left: 50px;
  }
+

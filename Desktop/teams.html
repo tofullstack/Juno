@@ -12,103 +12,129 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <!-- NAVBAR -->
-    <div class="container-menu">
-        <nav class="sidebar close">
-            <header>
-                <div class="image-text">
-                    <span class="image">
-                        <img src="img/logo.png" alt="Logo Juno">
-                    </span>
-                    <div class="text header-text">
-                        <span class="name">JUNO</span>
-                        <span class="profession">Olá Renata!</span>
+         <!-- Porção que constrói a navbar -->
+         <div class="container-menu">
+            <nav class="sidebar close">
+                <header>
+                    <div class="image-text">
+                        <span class="image">
+                            <img src="img/logo.png" alt="Logo Juno">
+                        </span>
+                        <div class="text header-text">
+                            <span class="name">JUNO</span>
+                            <span class="profession">Olá Renata!</span>
+                        </div>
+                    </div>
+                    <i class='bx bx-chevron-right toggle'></i>
+                </header>
+                <div class="menu-bar">
+                    <div class="menu">
+                        <ul class="menu-links">
+                            <li class="search-box">
+                                <i class='bx bx-search-alt-2 icon'></i>
+                                <input type="search" placeholder="Buscar...">
+                            </li>
+    
+                            <li class="nav-link">
+                                <a href="menu.html">
+                                    <i class='bx bx-home-circle icon'></i>
+                                    <span class="text nav-text">Dashboard</span>
+                                </a>
+                            </li>
+    
+                            <li class="nav-link">
+                                <a href="#">
+                                    <i class='bx bx-bar-chart-alt-2 icon'></i>
+                                    <span class="text nav-text">Estatísticas</span>
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="patients.html">
+                                    <i class='bx bx-id-card icon'></i>
+                                    <span class="text nav-text">Pacientes</span>
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="mapa.html">
+                                    <i class='bx bx-map icon'></i>
+                                    <span class="text nav-text">Mapeamento</span>
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="#">
+                                    <i class='bx bxs-file-doc icon'></i>
+                                    <span class="text nav-text">Relatório</span>
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="units.html">
+                                    <i class='bx bxs-clinic icon active'></i>
+                                    <span class="text nav-text">Unidades</span>
+                                </a>
+                            </li>
+                            <li class="nav-link">
+                                <a href="teams.html">
+                                    <i class='bx bx-group icon'></i>
+                                    <span class="text nav-text">Equipes</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bottom-content">
+                        <li class="nav-link">
+                            <a href="index.html" id="logoutBtn">
+                                <i class='bx bx-log-out icon'></i>
+                                <span class="text nav-text">Sair</span>
+                            </a>
+                        </li>
+                        <li class="mode">
+                            <div class="moon-sun">
+                                <i class='bx bx-moon icon moon'></i>
+                                <i class='bx bx-sun icon sun'></i>
+                            </div>
+                            <span class="mode-text text"></span>
+    
+                            <div class="toggle-switch">
+                                <span class="switch"></span>
+                            </div>
+                        </li>
                     </div>
                 </div>
-                <i class='bx bx-chevron-right toggle'></i>
-            </header>
-            <div class="menu-bar">
-                <div class="menu">
-                    <ul class="menu-links">
-                        <li class="search-box">
-                            <i class='bx bx-search-alt-2 icon'></i>
-                            <input type="search" placeholder="Buscar...">
-                        </li>
-
-                        <li class="nav-link">
-                            <a href="menu.html">
-                                <i class='bx bx-home-circle icon'></i>
-                                <span class="text nav-text">Dashboard</span>
-                            </a>
-                        </li>
-
-                        <li class="nav-link">
-                            <a href="#">
-                                <i class='bx bx-bar-chart-alt-2 icon'></i>
-                                <span class="text nav-text">Estatísticas</span>
-                            </a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="patients.html">
-                                <i class='bx bx-id-card icon'></i>
-                                <span class="text nav-text">Pacientes</span>
-                            </a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="map.html">
-                                <i class='bx bx-map icon'></i>
-                                <span class="text nav-text">Mapeamento</span>
-                            </a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#">
-                                <i class='bx bxs-file-doc icon'></i>
-                                <span class="text nav-text">Relatório</span>
-                            </a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="units.html">
-                                <i class='bx bxs-clinic icon'></i>
-                                <span class="text nav-text">Unidades</span>
-                            </a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="teams.html">
-                                <i class='bx bx-group icon'></i>
-                                <span class="text nav-text">Equipes</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="bottom-content">
-                    <li class="nav-link">
-                        <a href="#" id="logoutBtn">
-                            <i class='bx bx-log-out icon'></i>
-                            <span class="text nav-text">Sair</span>
-                        </a>
-                    </li>
-                    <li class="mode">
-                        <div class="moon-sun">
-                            <i class='bx bx-moon icon moon'></i>
-                            <i class='bx bx-sun icon sun'></i>
-                        </div>
-                        <span class="mode-text text"></span>
-
-                        <div class="toggle-switch">
-                            <span class="switch"></span>
-                        </div>
-                    </li>
-                </div>
-            </div>
-        </nav>
-    </div>
-    <!--Fim da navbar -->
-    <main class="container-dashboard">
-        <h1>Equipes</h1>
-
-        <div class="team-container">
-        
+            </nav>
         </div>
+         <!--Fim da navbar -->
+    <main class="container-dashboard">
+        <div class="teams-with-title">
+            <h1>Equipes por Unidade</h1>
+            <div class="unit-teams">
+                <div class="team">
+                    <!-- https://www.gigacalculator.com/randomizers/random-alphanumeric-generator.php -->
+                    <h2>Equipe WVT07</h2>
+                    <img class="team-icon" src="img/medical-team.png" style="background-color: #ef476f;">
+                    <p>5 integrantes,</p>
+                    <p>2 médicos/3 enfermeiros</p>
+                    <p class="unit-info">Unidade 4</p>
+                </div>
+
+                <div class="team">
+                    <h2>Equipe 6XQM7</h2>
+                    <img class="team-icon" src="img/medical-team.png" style="background-color: #1b9aaa;">
+                    <p>12 integrantes,</p>
+                    <p>3 médicos/7 enfermeiros</p>
+                    <p class="unit-info">Unidade 5</p>
+                </div>
+
+            <div class="team">
+                <h2>Equipe 1BXS6</h2>
+                <img class="team-icon" src="img/medical-team.png" style="background-color: #06d6a0;">
+                <p>8 integrantes,</p>
+                <p>2 médicos/6 enfermeiros</p>
+                <p class="unit-info">Unidade 7</p>
+            </div>
+            </div><!--Fim da unit-teams -->
+        </div>
+    </div> <!-- fim da unit and team-->
+    </main>
 
     <script src="js/teamsscript.js"></script>
 </body>
