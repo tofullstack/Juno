@@ -28,7 +28,7 @@ var dados = {
     datasets: [{
         label: 'Pacientes por mes',
         data: [12, 19, 10, 14, 6, 9, 21, 4, 15, 11, 14, 3],
-        borderColor: 'blue', // Cor da linha do gráfico
+        borderColor: 'blue', 
         borderWidth: 2, // Largura da linha do gráfico
         tension: 0.4, // Valor de tensão para suavizar as linhas
         pointRadius: 2,
@@ -124,26 +124,41 @@ generateCalendar(currentYear, currentMonth);
 var ctxColunas = document.getElementById('GraficoDeColunas').getContext('2d');
 
 var dadosColunas = {
-    labels: ['Out 2022', 'Nov 2022', 'Dez 2022', 'Jan 2023', 'Fev 2023', 'Mar 2023', 'Abril 2023', 'Jun 2023', 'Jul 2023', 'Ago 2023', 'Set 2023', 'Out 2023'],
+    labels: ['Out 2022', 'Nov 2022'],
     datasets: [{
-        label: '',
-        data: [8, 15, 5, 10, 12, 9, 18, 7, 14, 10, 12, 6],
+        label: 'microareas',
+        data: [8, 15],
         backgroundColor: 'green',
         borderColor: 'transparent',
-        borderWidth: 2 
+        borderWidth: 2,
     }]
 };
 
+// Calcular a soma total dos valores
+var total = dadosColunas.datasets[0].data.reduce((a, b) => a + b, 0);
+
+// Calcular as porcentagens
+var porcentagens = dadosColunas.datasets[0].data.map(valor => ((valor / total) * 100).toFixed(2) + '%');
+
 var optionsColunas = {
+    indexAxis: 'y', 
     scales: {
-        y: {
+        x: {
             beginAtZero: true
         }
     }
 };
 
 var GraficoDeColunas = new Chart(ctxColunas, {
-    type: 'bar',
+    type: 'bar', 
     data: dadosColunas,
     options: optionsColunas
+});
+
+var legendaDiv = document.querySelector('.legenda');
+
+dadosColunas.labels.forEach((label, index) => {
+    var div = document.createElement('div');
+    div.textContent = label + ': ' + porcentagens[index];
+    legendaDiv.appendChild(div);
 });

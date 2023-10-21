@@ -309,23 +309,35 @@ body.dark .sidebar header .toggle {
     color: #ffc7c5;
 }
 
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
-.grafico-de-linhas-container {
+.lines-graph-container {
     margin-top: 100px;
     margin-left: 100px;
     position: fixed;
     background-color: white;
     max-width: 70%;
-    /* Defina a largura máxima desejada em pixels ou em qualquer unidade de medida que preferir */
 }
 
-.grafico-de-colunas-container {
+.bar-graph-container {
     margin-top: 450px;
     margin-left: 750px;
     position: fixed;
     background-color: white;
     max-width: 70%;
-    /* Defina a largura máxima desejada em pixels ou em qualquer unidade de medida que preferir */
+    border-radius: 15px;
+}
+
+.legenda {
+    font-family: Arial, sans-serif; 
+    font-size: 14px; 
+    color: #333; 
+    margin-top: 10px; 
+}
+
+
+.legenda div {
+    margin-bottom: 5px; 
 }
 
 body {
@@ -334,7 +346,6 @@ body {
     margin: 0;
     padding: 0;
     position: relative;
-    /* Defina o posicionamento relativo para o corpo */
 }
 
 .calendar {
@@ -367,18 +378,13 @@ body {
     background-color: #f2f2f2;
 }
 
-/* Estilo para os botões dentro das células do calendário */
 .calendar-table button {
     width: 100%;
     height: 100%;
     padding: 0;
-    /* Remove o preenchimento interno do botão */
     border: none;
-    /* Remove a borda do botão */
     background: none;
-    /* Remove o fundo do botão */
     cursor: pointer;
-    /* Altera o cursor ao pairar sobre o botão */
 }
 
 .info-area {
@@ -391,7 +397,33 @@ body {
     top: 450px;
     right: 50px;
     width: 300px;
-    /* Defina a largura desejada */
     height: 350px;
-    /* Defina a altura desejada */
+}
+
+.last-patients {
+    margin-top: 4%;
+    margin-left: 10%;
+    width: 450px; 
+    height: 300px; 
+    overflow-y: scroll; 
+    border: 1px solid #ccc; 
+    background-color: white;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    padding: 10px; 
+}
+
+h2 {
+    margin: 0; 
+    text-align: center; 
+}
+
+.notificacao {
+    margin-bottom: 10px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
 }
