@@ -9,6 +9,7 @@
     --toggle-color: #ddd;
     --text-color: #707070;
     --color-light: rgba(132, 139, 200, 0.18);
+    --button-bg-color: #EF8481;
 
     --tran-02:: all 0.2s ease;
     --tran-03: all 0.3s ease;
@@ -23,7 +24,7 @@
     --padding-1: 1.2rem;
     --box-shadow: 0 2rem 3rem var(--color-light);
 
-    --color-sucess: #99cc33;
+    --color-success: #99cc33;
     --color-danger: #ff4545;
     --color-medium: #fa9f47;
 
@@ -59,6 +60,7 @@ body.dark{
     --primary-color-light: #3A3B3C;
     --toggle-color: #ddd;
     --text-color: #CCC;
+    --button-bg-color: #8883F0;
 }
 
 .container {
@@ -277,92 +279,137 @@ body.dark .sidebar header .toggle{
     margin-top: 10px;
 }
 
-/*Para aumentar o espaçamento entre as unidades e equipes*/
-.unit, .team{
-    padding: 30px;
-}
-
-.team-icon{
-    width: 5rem;
-    height: 5rem;
-    margin-bottom: 0.4rem;
-    border-radius: 50%;
-}
-
-.teams-with-title{
-    margin-top: 60px;
-}
-
-.unit-info{
-    font-size: 0.8rem;
-    opacity: 65%;/*Abaixa a opacidade do nome da unidade, para criar diferença visual entre as informações*/
-}
-
-.unit-management{
-    float: right;
-    margin-left: 50px; /*empurra a div que contém 'Gerenciar Distribuição*/
-}
-
-.units-all{
+/*Início do código referente a tela de paciente*/
+.container-dashboard .pacient-list{
+    background-color: var(--primary-color-light);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
     display: flex;
-    flex-direction: row;
-}
-
-.unit-managed{
-    margin: 15px;
-}
-
-.manage-title{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.title-only{
-    margin-right: 160px;
-}
-
-/*How To Make An Accordion Using HTML And CSS | Collapsible Content On Website - https://www.youtube.com/watch?v=fSkhTd4rpDo*/
-.collapsible{
-    margin: 60px auto;
-    width: 660px;
-}
-
-.collapsible li{
-    list-style: none;
-    width: 100%;
-    margin: 20px;
-    padding: 10px;
-    border-radius: 8px;
-    background: var(--primary-color-light);
-}
-
-.collapsible li label{
-    display: flex;
-    align-items: center;
-    padding: 10px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.4rem;
     cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .container-dashboard .pacient-list:hover{
+      box-shadow: none;
+  }
+  .container-dashboard .pacient-list .pacient{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .container-dashboard .pacient-list .pacient img{
+      width: 5rem;
+      height: 5rem;
+      margin-bottom: 0.4rem;
+      border-radius: 50%;
+  }
+  
+  .container-dashboard  .pacient-order{
+      margin-top: 1.3rem; 
+  }
+  .container-dashboard .pacient-order h2{
+      margin-bottom: 0.8rem; 
+  }
+  .container-dashboard .pacient-order table{
+     background-color: var(--primary-color-light); 
+     width: 70vw;
+     padding: var(--card-padding);
+     text-align: center;
+     box-shadow: var(--box-shadow);
+     /* border-radius: var(--card-border-radius); */
+     transition: all 0.3s ease;
+  }
+  .container-dashboard .pacient-order table:hover{
+      box-shadow: none;
+  }
+  
+  .container-dashboard table tbody td{
+      height: 2.8rem;
+      border-bottom: 1px solid var(--toggle-color);
+      /* color: var(--text-color); */
+  }
+  .container-dashboard table tbody tr:last-child td{
+      border: none;
+  }
+  .container-dashboard .pacient-order a{
+      display: block;
+      margin: 1rem auto;
+      text-align: center;
+      color: var(--text-color);
+  }
+  /* Para deixar Título e Botao em paralelo */
+  .container-dashboard .patients-with-title {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container-dashboard .patients-with-title .top-tittle-button{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    gap: 38.5rem;
+    
+}
+.container-dashboard .patients-with-title .section-title {
+    flex: 1; 
+    margin: 0; 
 }
 
-label::before{
-    content: '+';
-    margin-right: 10px;
-    font size: 24px;
+.container-dashboard .patients-with-title .add-new-pacient {
+    margin-left: 10px;
+    margin-top: 0.5rem;
+
+}
+.container-dashboard .patients-with-title .add-new-pacient a {
+    color: white;
+    background-color: var(--button-bg-color);
+    font-size: 12px;
+    padding: 15px;
+    border-radius:2%;
+
+}
+  .danger {
+      color: var(--color-danger);
+  }
+  
+  .medium {
+      color: var(--color-medium);
+  }
+  
+  .success {
+      color: var(--color-success);
+  }
+/*=============================================*/
+
+
+.search-box{
+    display: flex;
+    align-items: center;
+    padding: 3px;
 }
 
-/*Para esconder o input*/
-input[type="radio"]{
-    display: none;
+#searchbox-patient{
+    margin-right: 5px;/*empurra o ícone de lupa para direita, para não ficar grudado na search*/
 }
 
-.accordion .content{ /*Parte que é encarregada do estilo da parte interna da sanfona*/
-    max-height: 0px;
-    overflow: hidden;
-    transition: max-height 0.5s, padding 0.5s;
+.patient-search{
+    margin-bottom: 8px;
 }
 
-.collapsible input[type="radio"]:checked + label + .content{
-    max-height: 400px;
-    padding: 10px 10px 20px;
+.section-title{ /*Adiciona margens aos títulos de seção da página, na parte superior e inferior para criar maior separação visual*/
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.download-patient-info{
+    background: var(--button-bg-color);
+    border-radius: 8px;
+    padding: 8px;
+    color: #FFF;
+    
 }
