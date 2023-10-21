@@ -1,0 +1,146 @@
+
+html {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.container-map{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.size-map{
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    width: 110%;
+    height: 100%;
+;
+}
+
+.top-bar{
+    z-index: 1;
+    position: absolute;
+    justify-content: space-between;
+    display: flex;
+    top: 10px;
+    left: 120px;
+    height: 10vh;
+}
+
+#barra-de-pesquisa{
+    z-index: 1;
+    position: relative;
+    border: #626262;
+    border-radius: 50px;
+    color: var(--text-color);
+    background: var(--sidebar-color);
+    transition: var(--tran-04);
+    display: flex;
+    width: 18vw;
+    height: 70%;
+    padding: 0vw 1vw 0vw 1vw;
+    margin-right: 4vw;
+    font-size: 1vw;
+
+}
+
+#limpar-pesquisa{
+    overflow-y: none;
+    position: absolute;
+    z-index: 6;
+    left: 16vw;
+    top: 1vw;
+    height: 2vw;
+    width: 2vw;
+    border-radius: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1vw;
+    color: var(--text-color);
+}
+
+.pesquisa#barra-de-pesquisa:hover > .sugestoes{
+    background-color: #ef476f;
+}
+
+.sugestoes{
+    opacity: 0;
+    overflow-y: scroll;
+    z-index: 0;
+    position: relative;
+    top: -2vw;
+    padding: 2vw 0vw 1vw 0vw;
+    color: var(--text-color);
+    background: var(--sidebar-color);
+    transition: var(--tran-04);
+    display: flex;
+    flex-direction: column;
+    max-width: 18vw;
+    max-height: 18vw;
+    border-radius: 0px 0px 50px 50px;
+}
+
+
+*::-webkit-scrollbar {
+    width: 12px;
+
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--sidebar-color);
+    border-radius: 20px;
+    margin: 2vw 0vw 2vw 0vw;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+    border-radius: 20px;
+}
+.sugestoes b{
+    padding-top: 1vw;
+    margin-left: 1vw;
+}
+
+#area{
+    border: #626262;
+    border-radius: 50px;
+    color: var(--text-color);
+    background: var(--sidebar-color);
+    transition: var(--tran-04);
+    height: 50%;
+    width: 10vw;
+    margin-right: 2vw;
+    text-align: center;
+}
+
+#area:hover{
+    background: var(--primary-color);
+    color: var(--sidebar-color);
+}
+
+.scrol-area{
+    display: flex;
+    white-space: nowrap;
+    display: flex;
+    overflow-x: auto;
+}
+
+.container-menu{
+    z-index: 2;
+}
+
+
+
+
+
+
+
