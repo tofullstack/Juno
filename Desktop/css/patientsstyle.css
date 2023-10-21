@@ -342,6 +342,37 @@ body.dark .sidebar header .toggle{
       text-align: center;
       color: var(--text-color);
   }
+  /* Para deixar Título e Botao em paralelo */
+  .container-dashboard .patients-with-title {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start;
+}
+.container-dashboard .patients-with-title .top-tittle-button{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    gap: 38.5rem;
+    
+}
+.container-dashboard .patients-with-title .section-title {
+    flex: 1; 
+    margin: 0; 
+}
+
+.container-dashboard .patients-with-title .add-new-pacient {
+    margin-left: 10px;
+    margin-top: 0.5rem;
+
+}
+.container-dashboard .patients-with-title .add-new-pacient a {
+    color: white;
+    background-color: var(--button-bg-color);
+    font-size: 12px;
+    padding: 15px;
+    border-radius:2%;
+
+}
   .danger {
       color: var(--color-danger);
   }
