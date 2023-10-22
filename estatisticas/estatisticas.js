@@ -127,7 +127,7 @@ var dadosColunas = {
     datasets: [{
         label: 'Microareas',
         data: [6, 10],
-        backgroundColor: 'green',
+        backgroundColor: 'BLUE',
         borderWidth: 2,
     }]
 };
