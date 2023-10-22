@@ -24,8 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 var ctx = document.getElementById('GraficoDeLinhas').getContext('2d');
 
 var dados = {
-    labels: ['Out 2022', 'Nov 2022', 'Dez 2022', 'Jan 2023', 'Fev 2023', 'Mar 2023', 'Abril 2023', 'Jun 2023', 'Jul 2023', 'Ago 2023', 'Set 2023', 'Out 2023'],
-    datasets: [{
+  labels: ['Out 2022', 'Nov 2022', 'Dez 2022', 'Jan 2023', 'Fev 2023', 'Mar 2023', 'Abril 2023', 'Jun 2023', 'Jul 2023', 'Ago 2023', 'Set 2023', 'Out 2023'],    datasets: [{
         label: 'Pacientes por mes',
         data: [12, 19, 10, 14, 6, 9, 21, 4, 15, 11, 14, 3],
         borderColor: 'blue', 
@@ -124,10 +123,10 @@ generateCalendar(currentYear, currentMonth);
 var ctxColunas = document.getElementById('GraficoDeColunas').getContext('2d');
 
 var dadosColunas = {
-    labels: ['Out 2022', 'Nov 2022'],
+    labels: ['Out 2023', 'Out 2022'],
     datasets: [{
-        label: 'microareas',
-        data: [8, 15],
+        label: 'Microareas',
+        data: [6, 10],
         backgroundColor: 'green',
         borderWidth: 2,
     }]

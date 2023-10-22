@@ -311,7 +311,7 @@ body.dark .sidebar header .toggle {
 
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ 
 
-.lines-graph-container {
+.lines-graph-container  {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -320,7 +320,14 @@ body.dark .sidebar header .toggle {
     max-width: 70%;
     border-radius: 5px;
     border: #ccc;
+   
     
+}
+.dark .lines-graph-container {
+background-color:rgba(132, 139, 200, 0.18);
+color: #707070;
+
+
 }
 
 
@@ -333,10 +340,11 @@ body.dark .sidebar header .toggle {
     max-width: 100%;
     border-radius: 15px;
     
+    
 }
 
 .legenda {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     color: #333;
     margin-top: 10px;
@@ -348,7 +356,7 @@ body.dark .sidebar header .toggle {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: #f2f2f2;
     margin: 0;
     padding: 0;
@@ -361,6 +369,8 @@ body {
     padding: 10px;
     position: fixed;
     right: 10px;
+    cursor: pointer;
+    
 
 }
 
@@ -379,10 +389,12 @@ body {
     border: 1px solid #ccc;
     text-align: center;
     padding: 10px;
+    cursor: pointer;
 }
 
 .calendar-table th {
     background-color: #f2f2f2;
+    
 }
 
 .calendar-table button {
@@ -415,12 +427,21 @@ body {
     overflow-y: scroll;
     border: 1px solid #ccc;
     background-color: white;
+    cursor: pointer;
 }
+
+.dark .last-patients::-webkit-scrollbar {
+    background-color: rgba(132, 139, 200, 0.18);
+    color: #707070;
+
+}
+
 
 .conteudo {
     display: flex;
     flex-direction: column;
     padding: 10px;
+   
 }
 
 h2 {
@@ -435,14 +456,35 @@ h2 {
     background-color: #f9f9f9;
 }
 .dark .calendar {
-    color: #EF8481;
-    background-color: #18191A;
-    border-color: #EF8481;
-    
+    color: #707070;
+
+    background-color:rgba(132, 139, 200, 0.18);
 }
 body.dark {
-
     background: #18191A;
 }
 
+.dark .bar-graph-container{
+    background-color: rgba(132, 139, 200, 0.18);
+    color: #707070;
 
+}
+
+.dark .last-patients {
+    background-color: rgba(132, 139, 200, 0.18);
+    color: #707070;
+
+    
+}
+.dark .notificacao{
+    color:white;
+    background-color: rgba(132, 139, 200, 0.18);;
+    color: #707070;
+
+}
+
+.dark .info-area {
+    background-color:rgba(132, 139, 200, 0.18);
+    color: #707070;
+
+}
