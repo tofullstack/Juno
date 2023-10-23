@@ -125,7 +125,7 @@ var ctxColunas = document.getElementById('GraficoDeColunas').getContext('2d');
 var dadosColunas = {
     labels: ['Out 2023', 'Out 2022'],
     datasets: [{
-        label: 'Microareas',
+        label: 'Microáreas',
         data: [6, 10],
         backgroundColor: '#e27d7a',
         borderWidth: 2,
