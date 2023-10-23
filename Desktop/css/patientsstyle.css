@@ -352,7 +352,7 @@ body.dark .sidebar header .toggle{
     display: flex;
     align-items: center;
     margin-top: 0.5rem;
-    gap: 38.5rem;
+    gap: 48rem;
     
 }
 .container-dashboard .patients-with-title .section-title {
@@ -413,3 +413,6 @@ body.dark .sidebar header .toggle{
     color: #FFF;
     
 }
+
+/**/
+
