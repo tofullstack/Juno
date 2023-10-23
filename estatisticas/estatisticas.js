@@ -27,7 +27,7 @@ var dados = {
   labels: ['Out 2022', 'Nov 2022', 'Dez 2022', 'Jan 2023', 'Fev 2023', 'Mar 2023', 'Abril 2023', 'Jun 2023', 'Jul 2023', 'Ago 2023', 'Set 2023', 'Out 2023'],    datasets: [{
         label: 'Pacientes por mes',
         data: [12, 19, 10, 14, 6, 9, 21, 4, 15, 11, 14, 3],
-        borderColor: 'blue', 
+        borderColor: '#e27d7a', 
         borderWidth: 2, 
         tension: 0.4, 
         pointRadius: 2,
@@ -127,7 +127,7 @@ var dadosColunas = {
     datasets: [{
         label: 'Microareas',
         data: [6, 10],
-        backgroundColor: 'BLUE',
+        backgroundColor: '#e27d7a',
         borderWidth: 2,
     }]
 };

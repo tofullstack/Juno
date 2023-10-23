@@ -429,11 +429,12 @@ body {
     margin-left: 7%;
     width: 450px;
     height: 300px;
-    overflow-y: scroll;
     background-color: white;
     cursor: pointer;
     color: #707070;
     font-weight: bold;
+    border-radius: 2rem;
+    
 }
 
 .dark .last-patients::-webkit-scrollbar {
@@ -451,7 +452,7 @@ body {
 }
 
 h2 {
-    margin: 0;
+    margin: 1rem;
     text-align: center;
     font-weight: bold;
 }
